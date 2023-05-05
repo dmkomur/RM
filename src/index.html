@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Rick&Morty</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
+    <a href="./characters.html">charcters</a>
+    <a href="./episodes.html">episodes</a>
+    <a href="./error.html">error</a>
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <load ="partials/index-header.html" />
+    <load ="partials/index-hero.html" />
+    <main>
+      <load ="partials/divider.html" />
+      <load ="partials/index-search.html" />
+      <load ="partials/index-maincharacters.html" />
+      <load ="partials/index-gallery.html" />
+    </main>
+    <load ="partials/index-footer.html" />
 
     <script type="module" src="/main.js"></script>
   </body>
