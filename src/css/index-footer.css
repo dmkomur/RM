@@ -2,6 +2,9 @@
   background-color: var(--color-white);
   padding-top: 42px;
   padding-bottom: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   /* width: 100%; */
   /* margin-left: auto;
   margin-right: auto; */
@@ -11,10 +14,14 @@
 /* .footer {
   width: 100%;
 } */
+.footer {
+  width: 100%;
+  margin: 0;
+}
 .footer-components {
   display: flex;
   margin-bottom: 82px;
-  justify-content: center;
+  /* justify-content: center; */
 }
 .footer-logo {
   position: relative;
@@ -49,9 +56,9 @@
   line-height: 1.12;
   z-index: 1;
 }
-.footer-pages {
+/* .footer-pages {
   display: flex;
-}
+} */
 .footer-list {
   display: flex;
   flex-direction: column;
@@ -63,7 +70,7 @@
 }
 .footer-social-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 12px;
 }
 .footer-social-list-link {
@@ -92,4 +99,46 @@
   font-size: 12px;
   line-height: 1.16;
   color: rgba(17, 17, 17, 0.4);
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .footer-wrap {
+    flex-direction: row;
+  }
+  .footer-components {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-wrap {
+    margin-left: 96px;
+    gap: 80px;
+  }
+  .footer-logo-rick-btn {
+    width: 153px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+  .footer-logo-morty-btn {
+    top: 35%;
+    left: 55%;
+    width: 125px;
+    height: 49px;
+    font-size: 21px;
+    line-height: 1;
+  }
+  .privacy-policy {
+    font-size: 14px;
+    line-height: 1.3;
+  }
 }
