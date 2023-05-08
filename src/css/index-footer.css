@@ -70,6 +70,19 @@
   height: 40px;
   border: 1px solid #111111;
   border-radius: 8px;
+  transition: background-color 250ms linear;
+}
+.footer-social-list-link:is(:hover, :focus) {
+  background-color: var(--color-light-green);
+}
+.footer-social-list-link:is(:hover, :focus) .footer-social-icon {
+  fill: var(--color-white);
+}
+.footer-characters-item {
+  transition: color 250ms linear;
+}
+.footer-characters-item:is(:hover, :focus) {
+  color: var(--color-light-green);
 }
 .footer-wrap {
   display: flex;
@@ -80,6 +93,7 @@
 .footer-social-icon {
   width: 18px;
   height: 18px;
+  transition: fill 250ms linear;
 }
 .privacy-policy {
   display: flex;
