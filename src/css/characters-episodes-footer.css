@@ -70,6 +70,14 @@
   height: 40px;
   border: 1px solid #fafafa;
   border-radius: 8px;
+  transition: background-color 250ms linear;
+}
+.footer-social-list-link-characters:is(:hover, :focus) {
+  background-color: var(--color-light-green);
+}
+.footer-social-list-link-characters:is(:hover, :focus)
+  .footer-social-icon-characters {
+  fill: var(--color-other-black);
 }
 
 .footer-wrap {
@@ -82,6 +90,7 @@
   width: 18px;
   height: 18px;
   fill: var(--color-white);
+  transition: fill 250ms linear;
 }
 .privacy-policy-characters {
   display: flex;

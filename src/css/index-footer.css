@@ -70,6 +70,17 @@
   height: 40px;
   border: 1px solid #111111;
   border-radius: 8px;
+  transition: background-color 250ms linear;
+}
+.footer-social-list-link:is(:hover, :focus) {
+  background-color: var(--color-light-green);
+}
+
+.footer-characters-item {
+  transition: color 250ms linear;
+}
+.footer-characters-item:is(:hover, :focus) {
+  color: var(--color-light-green);
 }
 .footer-wrap {
   display: flex;
