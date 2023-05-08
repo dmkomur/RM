@@ -1,8 +1,8 @@
 :root {
-  --color-black: #0D171D;
-  --color-light-green: #DAF836;
-  --color-white: #FAFAFA;
-  --color-gree: #A1D737;
+  --color-black: #0d171d;
+  --color-light-green: #daf836;
+  --color-white: #fafafa;
+  --color-gree: #a1d737;
   --color-other-black: #111111;
   --animation-style: ease-out;
 }
@@ -11,7 +11,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: var(--color-other-black);
-
 }
 
 .visually-hidden {
@@ -53,7 +52,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-
   .container {
     padding: 0 8px;
     max-width: 1200px;
@@ -68,8 +66,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  transition: opacity 250ms,
-    visibility 250ms;
+  transition: opacity 250ms, visibility 250ms;
 }
 
 .backdrop.is-hidden {
