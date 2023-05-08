@@ -1,3 +1,12 @@
 .test {
     text-emphasis: none;
 }
+
+.container.divider {
+    display: flex;
+    background-color: red;
+}
+
+.divider-text {
+    border-radius: 2px;
+}
