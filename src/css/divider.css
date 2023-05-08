@@ -4,9 +4,123 @@
 
 .container.divider {
     display: flex;
-    background-color: red;
+    position: relative;
+    margin-top: 1000px;
 }
 
 .divider-text {
-    border-radius: 2px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    border-radius: 25px;
+    padding: 14px 24px;
+    letter-spacing: 0.44px;
+    white-space: nowrap;
+}
+
+.divider-the_adventures,
+.divider-Rick_and_Morty {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.divider-Justin_Roiland,
+.divider-Amazing,
+.divider-Animated {
+    background-color: var(--color-gree);
+}
+
+.divider-Amazing,
+.divider-Whoa {
+    background-color: var(--color-gree);
+    transform: rotate(180deg);
+}
+
+.divider-follows {
+    color: var(--color-light-green);
+    background-color: var(--color-black);
+    transform: rotate(180deg);
+}
+
+.divider-Sitcom,
+.divider-creative,
+.divider-comics,
+.divider-characters {
+    background-color: var(--color-light-green);
+}
+
+.divider-superpower {
+    color: var(--color-gree);
+    background-color: var(--color-black);
+}
+
+.divider-absolute_Animated,
+.divider-absolute_Sitcom,
+.divider-absolute_superpower,
+.divider-absolute_creative,
+.divider-absolute_comics,
+.divider-absolute_characters {
+    position: absolute;
+    left: -1000px;
+}
+
+.divider-the_adventures {
+    margin-right: 36px;
+}
+
+.divider-Justin_Roiland {
+    margin-right: 178.88px;
+}
+
+.divider-Amazing {
+    margin-right: 4px;
+}
+
+.divider-Rick_and_Morty {
+    margin-right: 39px;
+}
+
+.divider-follows {
+    margin-right: 122.9px;
+}
+
+.divider-absolute_Animated {
+    top: -51px;
+    left: 60px;
+}
+
+.divider-absolute_Sitcom {
+    transform: matrix(0.86, 0.52, -0.52, 0.85, 0, 0);
+    top: -75px;
+    left: 165px;
+}
+
+.divider-absolute_superpower {
+    top: -25px;
+    left: 375px;
+    transform: matrix(0.96, 0.29, -0.29, 0.96, 0, 0);
+}
+
+.divider-absolute_creative {
+    top: -25px;
+    left: 575px;
+    transform: matrix(-0.67, 0.74, -0.74, -0.67, 0, 0);
+}
+
+.divider-absolute_comics {
+    top: -35px;
+    left: 910px;
+    transform: matrix(0.82, 0.57, -0.57, 0.82, 0, 0);
+}
+
+.divider-absolute_characters {
+    top: -25px;
+    left: 1210px;
+    transform: matrix(-0.86, 0.52, -0.52, -0.86, 0, 0);
+}
+
+.divider-Whoa {
+    position: absolute;
+    z-index: 1;
 }
