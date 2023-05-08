@@ -1,3 +1,177 @@
-.test {
-  text-emphasis: none;
+.footer-main-characters {
+  background-color: var(--color-other-black);
+  padding-top: 40px;
+  padding-bottom: 16px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer-components {
+  display: flex;
+  margin-bottom: 82px;
+  justify-content: center;
+}
+.footer-logo {
+  position: relative;
+  max-width: 149px;
+  height: auto;
+}
+.footer-logo-rick-btn-characters {
+  position: relative;
+  width: 120px;
+  height: 46px;
+
+  background: var(--color-gree);
+  border-radius: 25px;
+  border: none;
+  color: var(--color-other-black);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.12;
+}
+.footer-logo-morty-btn-characters {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+
+  transform: rotate(35deg);
+  width: 97px;
+  height: 42px;
+  border: none;
+  border-radius: 25px;
+  background: var(--color-light-green);
+  color: var(--color-other-black);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.12;
+  z-index: 1;
+}
+
+.footer-list-characters {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--color-white);
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 12px;
+}
+.footer-social-list-link-characters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fafafa;
+  border-radius: 8px;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 42px;
+  gap: 12px;
+}
+.footer-social-icon-characters {
+  width: 18px;
+  height: 18px;
+  fill: var(--color-white);
+}
+.privacy-policy-characters {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: rgba(250, 250, 250, 0.4);
+}
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .footer-main-characters {
+    padding-top: 36px;
+  }
+  .footer-logo {
+    width: 225px;
+  }
+
+  .footer-components {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: unset;
+  }
+  .footer-wrap {
+    margin-left: 168px;
+    gap: 80px;
+    flex-direction: row;
+  }
+  .footer-list-characters {
+    gap: 16px;
+    font-size: 16px;
+    line-height: 1.12;
+  }
+  .footer-social-list-link-characters {
+    width: 56px;
+    height: 56px;
+  }
+
+  .footer-social-list {
+    gap: 24px;
+  }
+  .footer-logo-rick-btn-characters {
+    width: 153px;
+    height: 49px;
+    font-size: 20px;
+    line-height: 1.1;
+  }
+  .footer-logo-morty-btn-characters {
+    top: 50%;
+    left: 60%;
+    width: 125px;
+    height: 49px;
+    font-size: 21px;
+    line-height: 1;
+  }
+  .footer-social-icon-characters {
+    width: 24px;
+    height: 24px;
+  }
+  .privacy-policy-characters {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-top: 130px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 8px;
+    max-width: 1200px;
+  }
+  .footer-main-characters {
+    padding-top: 69px;
+  }
+  .footer-wrap {
+    margin-left: 403px;
+    gap: 252px;
+  }
+  .footer-list {
+    gap: 16px;
+  }
+  .footer-social-list {
+    gap: 32px;
+  }
 }
