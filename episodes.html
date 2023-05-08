@@ -14,7 +14,7 @@
     />
 
     
-    <link rel="stylesheet" href="/RM/assets/styles-69f0b9c9.css">
+    <link rel="stylesheet" href="/RM/assets/styles-3e3a0aea.css">
   </head>
   <body>
     <a href="./index.html">Go to home</a>
@@ -85,8 +85,51 @@
   </div>
 </div>
 
-      <p>episodes-filter</p>
-
+      
+<section class="episodes-filter">
+    <div class="container">
+    <h2 class="hidden">Episodes filter</h2>
+    <form action="" class="form-filter">
+        <div class="episodes-filter-input-field">
+        <label class="episodes-filter-text" for="episodes-filter-user-name">Name</label>
+        <div class="episodes-filter-input-wrap">
+        <input 
+            class="episodes-filter-input"
+            id="episodes-filter-user-name" 
+            type="text" 
+            name="episodes-filter-user-name" 
+            placeholder="Enter name"
+            />
+            <svg class="episodes-filter-icon"  width="18px" height="18px">
+                <use href="../img/symbol.svg#icon-search"></use>
+            </svg>
+        </div>
+        </div>
+        <div>
+        <label for="episode" class="episodes-filter-text"> Episode code </label>
+        <div class="episodes-filter-select-field">
+            <select name="season" id="episode" class="episodes-filter-select">
+                
+                <optgroup label="1 season" class="episodes-filter-select-wrap">
+                  <option value="s1">1 series</option>
+                </optgroup>
+            
+            </select>
+        <svg class="episodes-filter-icon"  width="18px" height="18px">
+            <use href=""></use>
+        </svg>
+    </div>
+    </div>
+    </form>
+    <div>
+        <img src="" alt="">
+        <p></p>
+        <p>Season<span></span></p>
+        <p>Air date<span></span></p>
+    </div>
+    <button type="button" class="load-more">Load more</button>
+    </div>
+</section>
     </main>
     <footer class="footer-main-characters" id="footer">
   <div class="container">
