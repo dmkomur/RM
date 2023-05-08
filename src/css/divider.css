@@ -1,3 +1,129 @@
 .test {
     text-emphasis: none;
 }
+
+.divider {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.divider-text {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 22px;
+    border-radius: 25px;
+    padding: 14px 24px;
+    letter-spacing: 0.44px;
+    white-space: nowrap;
+    position: absolute;
+
+}
+
+.divider-the_adventures,
+.divider-Rick_and_Morty {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.divider-Justin_Roiland,
+.divider-Amazing,
+.divider-Animated {
+    background-color: var(--color-gree);
+}
+
+.divider-Amazing,
+.divider-Whoa {
+    background-color: var(--color-gree);
+    transform: rotate(180deg);
+}
+
+.divider-follows {
+    color: var(--color-light-green);
+
+    background-color: var(--color-black);
+    transform: rotate(180deg);
+}
+
+.divider-Sitcom,
+.divider-creative,
+.divider-comics,
+.divider-characters {
+    background-color: var(--color-light-green);
+}
+
+.divider-superpower {
+    color: var(--color-gree);
+    background-color: var(--color-black);
+}
+
+.divider-the_adventures {
+    top: 0px;
+    left: -700px;
+}
+
+.divider-Justin_Roiland {
+    top: 0px;
+    left: -445px;
+}
+
+.divider-Rick_and_Morty {
+    top: 0px;
+    left: 80px;
+}
+
+.divider-follows {
+    top: 0px;
+    left: 330px;
+}
+
+.divider-Whoa {
+    z-index: 1;
+    top: 0px;
+    left: 577px;
+}
+
+.divider-Animated {
+    top: -51px;
+    left: -644px;
+}
+
+.divider-Sitcom {
+    transform: matrix(0.86, 0.52, -0.52, 0.85, 0, 0);
+    top: -75px;
+    left: -540px;
+}
+
+.divider-superpower {
+    top: -25px;
+    left: -335px;
+    transform: matrix(0.96, 0.29, -0.29, 0.96, 0, 0);
+}
+
+.divider-creative {
+    top: -25px;
+    left: -150px;
+    transform: matrix(-0.67, 0.74, -0.74, -0.67, 0, 0);
+}
+
+.divider-comics {
+    top: -35px;
+    left: 185px;
+    transform: matrix(0.82, 0.57, -0.57, 0.82, 0, 0);
+}
+
+.divider-characters {
+    top: -25px;
+    left: 470px;
+    transform: matrix(-0.86, 0.52, -0.52, -0.86, 0, 0);
+}
+
+
+
+.divider-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
