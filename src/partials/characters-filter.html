@@ -1,6 +1,11 @@
-<h2 class="hidden">Characters filter</h2>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.css"
+/>
+
 <section class="characters-filter container">
-  <form>
+  <h2 class="hidden">Characters filter</h2>
+  <form class="characters-filter-form">
     <div class="input-with-label-container">
       <label class="input-label">
         Name
@@ -22,9 +27,9 @@
           <option value="alive">Alive</option>
           <option value="dead">Dead</option>
         </select>
-        <svg class="select-icon" width="9" height="4.5">
+        <!-- <svg class="select-icon" width="9" height="4.5">
           <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
+        </svg> -->
       </div>
     </div>
 
@@ -36,9 +41,9 @@
           <option value="human">Human</option>
           <option value="alien">Alien</option>
         </select>
-        <svg class="select-icon select-icon-species" width="9" height="4.5">
+        <!-- <svg class="select-icon select-icon-species" width="9" height="4.5">
           <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
+        </svg> -->
       </div>
     </div>
 
@@ -52,9 +57,9 @@
             Human with ants in his eyes
           </option>
         </select>
-        <svg class="select-icon" width="9" height="4.5">
+        <!-- <svg class="select-icon" width="9" height="4.5">
           <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
+        </svg> -->
       </div>
     </div>
 
@@ -66,63 +71,31 @@
           <option value="female">Female</option>
           <option value="male">Male</option>
         </select>
-        <svg class="select-icon select-icon-gender" width="9" height="4.5">
+        <!-- <svg class="select-icon select-icon-gender" width="9" height="4.5">
           <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
+        </svg> -->
       </div>
     </div>
   </form>
 
   <!-- Img card -->
-  <div class="characters-gallery">
-    <div class="character-card">
-      <img src="http://surl.li/gvvhe" alt="" width="335" />
+  <ul class="characters-gallery">
+    <li class="character-card">
+      <div class="character-img-wrap">
+        <img src="http://surl.li/gvvhe" alt="" width="335" />
+      </div>
       <p class="character-name">Beebo</p>
       <p class="character-characteristics"><span>Origin:</span> Earth - c317</p>
       <p class="character-characteristics"><span>Location:</span> Svazilend</p>
-    </div>
-
-    <div class="character-card">
-      <img src="http://surl.li/gwwxe" alt="" width="335" />
-      <p class="character-name">Morty Smith</p>
-      <p class="character-characteristics character-characteristics-origin">
-        <span>Origin:</span> Earth - c317
-      </p>
-      <p class="character-characteristics character-characteristics-location">
-        <span>Location:</span> Svazilend
-      </p>
-    </div>
-
-    <div class="character-card">
-      <img src="http://surl.li/gwxdi" alt="" width="335" />
-      <p class="character-name">Rick Sanchez</p>
-      <p class="character-characteristics character-characteristics-origin">
-        <span>Origin:</span> Earth - c317
-      </p>
-      <p class="character-characteristics character-characteristics-location">
-        <span>Location:</span> Svazilend
-      </p>
-    </div>
-
-    <div class="character-card">
-      <img src="http://surl.li/gwxdm" alt="" width="335" />
-      <p class="character-name">Jerry Smith</p>
-      <p class="character-characteristics character-characteristics-origin">
-        <span>Origin:</span> Earth - c317
-      </p>
-      <p class="character-characteristics character-characteristics-location">
-        <span>Location:</span> Svazilend
-      </p>
-    </div>
-  </div>
+    </li>
+  </ul>
 
   <!-- Load more -->
   <button type="button" class="load-more-btn">Load more</button>
 </section>
 
 <!-- Error -->
-
-<div class="characters-filter-error">
+<div class="characters-filter-error hidden">
   <img
     src="../img/character-filter/error-filter-mobile-1x.png"
     alt="Error. You need to change your search terms"
@@ -133,3 +106,5 @@
   />
   <p>Oops! Try looking for something else...</p>
 </div>
+
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>

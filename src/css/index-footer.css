@@ -139,6 +139,7 @@
   .footer-social-list-link {
     width: 56px;
     height: 56px;
+    border-radius: 12px;
   }
 
   .footer-social-list {

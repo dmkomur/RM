@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    height: 137px;
+    overflow-x: clip;
 }
 
 .divider-text {
@@ -57,65 +59,67 @@
 .divider-superpower {
     color: var(--color-gree);
     background-color: var(--color-black);
+
+    top: -50px;
+    left: -335px;
+    transform: matrix(0.96, 0.29, -0.29, 0.96, 0, 0);
+
 }
 
 .divider-the_adventures {
-    top: 0px;
+    top: -25px;
     left: -700px;
 }
 
 .divider-Justin_Roiland {
-    top: 0px;
+    top: -25px;
     left: -445px;
 }
 
 .divider-Rick_and_Morty {
-    top: 0px;
+    top: -25px;
     left: 80px;
 }
 
 .divider-follows {
-    top: 0px;
+    top: -25px;
     left: 330px;
 }
 
 .divider-Whoa {
     z-index: 1;
-    top: 0px;
+    top: -25px;
     left: 577px;
+
 }
 
 .divider-Animated {
-    top: -51px;
+    top: -76px;
     left: -644px;
 }
 
 .divider-Sitcom {
     transform: matrix(0.86, 0.52, -0.52, 0.85, 0, 0);
-    top: -75px;
+    top: -100px;
     left: -540px;
 }
 
-.divider-superpower {
-    top: -25px;
-    left: -335px;
-    transform: matrix(0.96, 0.29, -0.29, 0.96, 0, 0);
-}
+
 
 .divider-creative {
-    top: -25px;
-    left: -150px;
+    top: -45px;
+    left: -160px;
     transform: matrix(-0.67, 0.74, -0.74, -0.67, 0, 0);
 }
 
 .divider-comics {
-    top: -35px;
+    top: -60px;
     left: 185px;
     transform: matrix(0.82, 0.57, -0.57, 0.82, 0, 0);
 }
 
 .divider-characters {
-    top: -25px;
+    top: -50px;
     left: 470px;
     transform: matrix(-0.86, 0.52, -0.52, -0.86, 0, 0);
 }
