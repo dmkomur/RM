@@ -3,25 +3,25 @@
     #BASE_URL = 'https://rickandmortyapi.com/api';
 
     constructor() {
-        this.name = 'rick';
+        this.name = '';
         this.type = '';
         this.species = '';
         this.status = '';
         this.gender = '';
         this.page = 1;
         this.currentPage = '';
-        this.totalPages = '';
-        this.episode = '300';
+        this.totalPages = 0;
+        this.episode = '';
         this.episodeName = '';
+        this.nextPage = '';
 
-        this.searchParamsChar = new URLSearchParams({
-            name: this.name,
-            status: this.status,
-            species: this.species,
-            type: this.type,
-            gender: this.gender,
-            page: this.page,
-            });
+        // this.searchParamsChar = new URLSearchParams({
+        //     name: this.name,
+        //     status: this.status,
+        //     species: this.species,
+        //     type: this.type,
+        //     gender: this.gender,
+        //     });
     }
 
 
@@ -32,7 +32,7 @@
                 return response.json()}).catch(err => console.log(err))
     }
     getCharacters() { 
-        return fetch(`${this.#BASE_URL}/character/?${this.searchParamsChar.toString()}`)
+        return fetch(`${this.#BASE_URL}/character/?name=${this.name}&status=${this.status}&species=${this.species}&type=${this.type}&gender=${this.gender}`)
             .then(response => {
                 if (!response.ok) { throw new Error(response.status) }
                 return response.json()}).catch(err => console.log(err))
@@ -47,6 +47,12 @@
         return fetch(`${this.#BASE_URL}/episode/?name=${this.episodeName}&episode=${this.episode}`)
             .then(response => {
                 if (response.status >= 300) {throw new Error(response.status)}
+                return response.json()}).catch(err => console.log(err))
+     }
+       getNextPage(url) {
+        return fetch(url)
+            .then(response => {
+                if (!response.ok) {throw new Error(response.status)}
                 return response.json()}).catch(err => console.log(err))
     }
 }
