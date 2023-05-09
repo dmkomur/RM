@@ -63,6 +63,7 @@
     top: -50px;
     left: -335px;
     transform: matrix(0.96, 0.29, -0.29, 0.96, 0, 0);
+
 }
 
 .divider-the_adventures {
@@ -106,13 +107,13 @@
 
 
 .divider-creative {
-    top: -55px;
-    left: -150px;
+    top: -45px;
+    left: -160px;
     transform: matrix(-0.67, 0.74, -0.74, -0.67, 0, 0);
 }
 
 .divider-comics {
-    top: -55px;
+    top: -60px;
     left: 185px;
     transform: matrix(0.82, 0.57, -0.57, 0.82, 0, 0);
 }
