@@ -17,6 +17,7 @@ charactersList.addEventListener('click', onCharCardClick)
 
 
 charactersErrorRef.classList.add('hidden');
+offLoadBtn();
 
 
 async function onFormCharSubbit(event) { 
@@ -25,6 +26,7 @@ async function onFormCharSubbit(event) {
     if (!response) {
         charactersList.innerHTML = '';
         charactersErrorRef.classList.remove('hidden')
+        return
     }
     charactersErrorRef.classList.add('hidden');
     query.totalPages = response.info.pages;

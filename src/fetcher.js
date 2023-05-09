@@ -14,14 +14,6 @@
         this.episode = '';
         this.episodeName = '';
         this.nextPage = '';
-
-        // this.searchParamsChar = new URLSearchParams({
-        //     name: this.name,
-        //     status: this.status,
-        //     species: this.species,
-        //     type: this.type,
-        //     gender: this.gender,
-        //     });
     }
 
 
