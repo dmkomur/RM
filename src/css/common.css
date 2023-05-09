@@ -6,9 +6,7 @@
   --color-other-black: #111111;
   --animation-style: ease-out;
 }
-.divider{
-  overflow-x: clip;
-}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
