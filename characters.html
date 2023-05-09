@@ -14,7 +14,7 @@
     />
 
     
-    <link rel="stylesheet" href="/RM/assets/styles-70f6904c.css">
+    <link rel="stylesheet" href="/RM/assets/styles-81278872.css">
   </head>
   <body>
     <header class="header-characters" id="myHeader">
@@ -92,7 +92,7 @@
 
       <h2 class="hidden">Characters filter</h2>
 <section class="characters-filter container">
-  <form>
+  <form class="characters-filter-form">
     <div class="input-with-label-container">
       <label class="input-label">
         Name
@@ -106,19 +106,21 @@
     </div>
 
     <!-- Filter select -->
-    <div class="select-container">
-      <label for="status">Status</label>
-      <div class="select-with-icon-container">
-        <select id="status" name="status">
-          <option value="">-</option>
-          <option value="alive">Alive</option>
-          <option value="dead">Dead</option>
-        </select>
-        <svg class="select-icon" width="9" height="4.5">
-          <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
+    <ul>
+      <div class="select-container">
+        <label for="status">Status</label>
+        <div class="select-with-icon-container">
+          <select id="status" name="status">
+            <option value="">-</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+          </select>
+          <svg class="select-icon" width="9" height="4.5">
+            <use href="../img/symbol.svg#icon-jackdaw"></use>
+          </svg>
+        </div>
       </div>
-    </div>
+    </ul>
 
     <div class="select-container">
       <label for="species">Species</label>
@@ -166,47 +168,16 @@
   </form>
 
   <!-- Img card -->
-  <div class="characters-gallery">
-    <div class="character-card">
-      <img src="http://surl.li/gvvhe" alt="" width="335" />
+  <ul class="characters-gallery">
+    <li class="character-card">
+      <div class="character-img-wrap">
+        <img src="http://surl.li/gvvhe" alt="" width="335" />
+      </div>
       <p class="character-name">Beebo</p>
       <p class="character-characteristics"><span>Origin:</span> Earth - c317</p>
       <p class="character-characteristics"><span>Location:</span> Svazilend</p>
-    </div>
-
-    <div class="character-card">
-      <img src="http://surl.li/gwwxe" alt="" width="335" />
-      <p class="character-name">Morty Smith</p>
-      <p class="character-characteristics character-characteristics-origin">
-        <span>Origin:</span> Earth - c317
-      </p>
-      <p class="character-characteristics character-characteristics-location">
-        <span>Location:</span> Svazilend
-      </p>
-    </div>
-
-    <div class="character-card">
-      <img src="http://surl.li/gwxdi" alt="" width="335" />
-      <p class="character-name">Rick Sanchez</p>
-      <p class="character-characteristics character-characteristics-origin">
-        <span>Origin:</span> Earth - c317
-      </p>
-      <p class="character-characteristics character-characteristics-location">
-        <span>Location:</span> Svazilend
-      </p>
-    </div>
-
-    <div class="character-card">
-      <img src="http://surl.li/gwxdm" alt="" width="335" />
-      <p class="character-name">Jerry Smith</p>
-      <p class="character-characteristics character-characteristics-origin">
-        <span>Origin:</span> Earth - c317
-      </p>
-      <p class="character-characteristics character-characteristics-location">
-        <span>Location:</span> Svazilend
-      </p>
-    </div>
-  </div>
+    </li>
+  </ul>
 
   <!-- Load more -->
   <button type="button" class="load-more-btn">Load more</button>
