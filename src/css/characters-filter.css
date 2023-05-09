@@ -4,6 +4,27 @@
     padding: 0 20px;
   }
 
+  .select-container {
+    --fsb-border: 1.5px solid var(--color-other-black);
+    --fsb-radius: 100px;
+    --fsb-color: var(--color-other-black);
+    --fsb-background: var(--color-white);
+    --fsb-font-size: 14px;
+    --fsb-shadow: 0;
+    --fsb-padding: 0.75em 1.5em;
+    --fsb-arrow-padding: 1.5em;
+    --fsb-arrow-size: 0.5em;
+    --fsb-arrow-color: currentColor;
+    --fsb-icon-color: currentColor;
+    --fsb-list-height: 200px;
+    --fsb-list-border: 1px solid var(--color-other-black);
+    --fsb-list-radius: 0.75em;
+    --fsb-list-color: rgba(17, 17, 17, 0.3);
+    --fsb-list-background: var(--color-white);
+    --fsb-hover-color: var(--fsb-color);
+    --fsb-hover-background: var(--color-white);
+  }
+
   .characters-filter {
     padding-top: 40px;
     padding-bottom: 80px;
@@ -28,9 +49,9 @@
     display: inline-block;
   }
 
-  .select-with-icon-container {
+  /* .select-with-icon-container {
     position: relative;
-  }
+  } */
 
   .characters-filter label,
   .characters-filter select,
@@ -78,11 +99,9 @@
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.29;
-
-    appearance: none;
   }
 
-  .characters-filter .select-icon {
+  /* .characters-filter .select-icon {
     position: absolute;
 
     top: 50%;
@@ -91,7 +110,7 @@
 
     fill: transparent;
     stroke: var(--color-other-black);
-  }
+  } */
 
   #status {
     font-family: 'Montserrat', sans-serif;
@@ -215,9 +234,9 @@
     width: 160px;
   }
 
-  .characters-filter .select-icon {
+  /* .characters-filter .select-icon {
     left: 121px;
-  }
+  } */
 
   /* Error */
   .characters-filter-error p {
@@ -283,7 +302,7 @@
     width: 167px;
   }
 
-  .characters-filter .select-icon {
+  /* .characters-filter .select-icon {
     left: auto;
     right: 40px;
   }
@@ -291,7 +310,7 @@
   .characters-filter .select-icon-species,
   .characters-filter .select-icon-gender {
     right: 24px;
-  }
+  } */
 
   label[for='type'],
   label[for='gender'] {
@@ -371,13 +390,13 @@
     margin-right: 16px;
   }
 
-  .characters-filter .select-icon {
+  /* .characters-filter .select-icon {
     right: 32px;
-  }
+  } */
 
-  .characters-filter .select-icon-gender {
+  /* .characters-filter .select-icon-gender {
     right: 16px;
-  }
+  } */
 
   label[for='type'],
   label[for='gender'] {
@@ -395,5 +414,9 @@
 
   .characters-gallery {
     column-gap: 24px;
+  }
+
+  .characters-filter img {
+    width: 278px;
   }
 }
