@@ -1,0 +1,210 @@
+@media screen and (min-width: 320px) {
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .modal {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%) scale(1);
+    max-width: 335px;
+    width: 100%;
+    max-height: 993px;
+    background-color: var(--color-black);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    padding: 40px 20px;
+    transition: transform 250ms;
+  }
+  .backdrop.is-hidden .modal {
+    transform: translate(-50%, 200%) scale(0);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-soc-icon {
+    stroke: var(--color-gree);
+    transform: scale(2.38);
+  }
+  .modal-button {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+    outline: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal-img {
+    background: #0d171d;
+    border: 2px solid var(--color-gree);
+    border-radius: 18px;
+    width: 295px;
+    height: 292px;
+  }
+  .character-characteristics-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 14px;
+    padding: 28px 30px;
+    column-gap: 14px;
+    row-gap: 20px;
+    width: 100%;
+    height: 160px;
+    background: #0d171d;
+    border: 2px solid var(--color-gree);
+    border-radius: 18px;
+  }
+  .character-characteristics-item {
+    min-width: 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    height: 40px;
+  }
+  .title-characteristic {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    color: rgba(250, 250, 250, 0.5);
+  }
+  .text-characteristic {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--color-white);
+  }
+  .text-characteristic-air-date {
+    width: 124px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--color-white);
+  }
+  .character-episodes-contsiner {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .character-episodes-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--color-white);
+  }
+  .character-episodes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .character-episodes-item {
+    width: 100%;
+    height: 64px;
+    background: #0d171d;
+    border: 2px solid var(--color-gree);
+    border-radius: 18px;
+  }
+  .character-episodes-item-wrap {
+    display: flex;
+    flex-direction: row;
+    padding: 14px;
+    height: 100%;
+  }
+  .character-episodes-item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.12;
+    /* width: 72px; */
+    color: var(--color-gree);
+    text-overflow: ellipsis;
+  }
+  .character-episodes-item-characteristic-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto;
+  }
+  .character-episodes-item-characteristic-item {
+    min-width: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+@media screen and (min-width: 335px) {
+  .character-characteristics-list {
+    padding: 28px 38px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .modal {
+    max-width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 702px;
+    max-height: 510px;
+    border-radius: 18px;
+    top: 15%;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+  .modal-soc-icon {
+    stroke: var(--color-gree);
+    transform: scale(2.62);
+  }
+  .modal-img {
+    width: 278px;
+    height: 292px;
+  }
+  .text-characteristic {
+    font-size: 16px;
+    line-height: 1.12;
+  }
+  .character-characteristics-list {
+    margin-top: 8px;
+    width: 278px;
+    height: 146px;
+    padding: 22px 20.5px;
+    column-gap: 16px;
+  }
+  .character-episodes-contsiner {
+    margin-top: 0px;
+  }
+  .character-episodes-list {
+    width: 352px;
+  }
+  .character-episodes-item {
+    height: 68px;
+  }
+  .character-episodes-item-characteristic-list {
+    gap: 14px;
+  }
+  .character-episodes-item-title {
+    width: 105px;
+  }
+  .text-characteristic-air-date {
+    width: 124px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 710px;
+    max-height: 510px;
+    border-radius: 18px;
+    gap: 16px;
+  }
+}
