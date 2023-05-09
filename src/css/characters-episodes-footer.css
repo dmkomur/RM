@@ -1,5 +1,5 @@
 .footer-main-characters {
-  background-color: var(--color-other-black);
+  background-color: var(--color-black);
   padding-top: 40px;
   padding-bottom: 16px;
 
@@ -136,6 +136,7 @@
   .footer-social-list-link-characters {
     width: 56px;
     height: 56px;
+    border-radius: 12px;
   }
 
   .footer-social-list {
