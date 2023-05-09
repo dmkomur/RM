@@ -1,7 +1,3 @@
-.test {
-  text-emphasis: none;
-}
-
 @media screen and (min-width: 320px) {
   .container {
     max-width: 100%;
@@ -125,7 +121,10 @@
     margin-bottom: 40px;
   }
 
-  .character-card img {
+  .character-img-wrap {
+    object-fit: cover;
+    overflow: hidden;
+
     border: 2px solid var(--color-gree);
     border-radius: 18px;
   }
@@ -313,10 +312,6 @@
     column-gap: 32px;
   }
 
-  .character-card img {
-    width: 336px;
-  }
-
   .character-name {
     margin-top: 16px;
   }
@@ -400,9 +395,5 @@
 
   .characters-gallery {
     column-gap: 24px;
-  }
-
-  .character-card img {
-    width: 278px;
   }
 }
