@@ -1,6 +1,6 @@
 import { QueryRick } from "./fetcher";
 import { debounce } from "lodash";
-import { markupCharacters } from "./marckup";
+import { marckupChar, markupCharacters } from "./marckup";
 
 
 
@@ -10,11 +10,12 @@ const formCharRef = document.querySelector('.characters-filter-form');
 const charactersList = document.querySelector('.characters-gallery');
 const charactersErrorRef = document.querySelector('.characters-filter-error')
 const loadBtnCharRef = document.querySelector('.load-more-btn')
+const modalBackdropCharRef = document.querySelector('.backdrop')
+
+
 
 formCharRef.addEventListener('input', debounce(onFormCharSubbit, 350));
-charactersList.addEventListener('click', onCharCardClick)
-
-
+charactersList.addEventListener('click', onCharCardClick);
 
 charactersErrorRef.classList.add('hidden');
 offLoadBtn();
@@ -34,8 +35,6 @@ async function onFormCharSubbit(event) {
     const data = response.results;
     charactersList.innerHTML = markupCharacters(data);
     charactersErrorRef.classList.add('hidden');
-    console.log(query.page);
-    console.log(query.totalPages);
     if (query.page < query.totalPages) {onLoadBtn()}
 }
 
@@ -45,23 +44,26 @@ async function onLoadBtnClick(event) {
     const data = response.results;
     charactersList.insertAdjacentHTML('beforeend', markupCharacters(data))
     query.page++;
-    if (query.page === query.totalPages) { offLoadBtn(); return}
-    console.log(query.page);
-    console.log(query.totalPages);
+    if (query.page === query.totalPages) { offLoadBtn(); return }
 }
 
 
 
     
-function onCharCardClick(event) {
-    console.log(event.target)    
-}
+async function onCharCardClick(event) {
+    const currentId = event.target.closest('.character-card').dataset.id;
+    const response = await query.getChar(currentId);
+    const markupToPaste = await marckupChar(response);
+    // console.log(markupToPaste);
+    modalBackdropCharRef.classList.remove('is-hidden')
+    modalBackdropCharRef.innerHTML = markupToPaste;
+   }
 
 function offLoadBtn () { 
-    loadBtnCharRef.classList.add('hidden');
+    loadBtnCharRef.classList.add('visually-hidden');
     loadBtnCharRef.removeEventListener('click', onLoadBtnClick)
 }
 function onLoadBtn () { 
-    loadBtnCharRef.classList.remove('hidden');
+    loadBtnCharRef.classList.remove('visually-hidden');
     loadBtnCharRef.addEventListener('click', onLoadBtnClick)
 }
