@@ -16,7 +16,7 @@
     border-radius: 100px;
     background-color: transparent;
     outline: none;
-    /* font-weight: 400; */
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     color: #111111;
@@ -77,22 +77,66 @@
 }
 
 /* .pisodes-filter-select-wrap {
-    position: absolute;
-    
+    position: absolute; 
 } */
 
 .episodes-filter-select-field {
    position: relative;
 }
 
+.episodes-filter-select-field select{
+   /* display: none; */
+}
+
+.select-selected {
+    background-color: #ffffff;;
+}
+
 /* .episodes-filter-select:focus {
     background-color: #DAF836;
 } */
 
+.gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.episodes-filter-card-list {
+position: relative;
+}
+
+.episodes-filter-photo-card {
+    background-color: rgba(13, 23, 29, 1);
+    border: 2px solid #A1D737;
+    border-radius: 18px;
+    width: 100%;
+    height: 100%;
+}
+
+.episodes-filter-info-name {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.12; 
+    color: #A1D737;
+}
+
+.episodes-filter-info-realepisode {
+    position: absolute;
+
+    left: 20px;
+    bottom: 42px;
+}
 
 
 @media screen and (min-width: 375px) {
-
+    .episodes-filter-photo-card {
+        width: 335px;
+        height: 250px;
+    }
 }
   
 @media screen and (min-width: 768px) {
@@ -120,9 +164,25 @@
     .episodes-filter-text {
         font-size: 14px;
     }
+
+    .gallery {
+        gap: 32px;
+    }
+
+    .episodes-filter-photo-card {
+        width: 336px;
+        height: 250px;
+    }
 }
   
 @media screen and (min-width: 1200px) {
   
+    .gallery {
+        column-gap: 16px;
+    }
 
+    .episodes-filter-photo-card {
+        width: 284px;
+        height: 200px;
+    }
 }
