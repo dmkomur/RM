@@ -1,3 +1,399 @@
-.test {
-  text-emphasis: none;
+@media screen and (min-width: 320px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .characters-filter {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .characters-filter .input-container {
+    position: relative;
+  }
+
+  .characters-filter .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 235px;
+    transform: translateY(-50%);
+
+    stroke: var(--color-other-black);
+    fill: none;
+  }
+
+  .characters-filter .select-container,
+  .characters-filter .input-with-label-container {
+    display: inline-block;
+  }
+
+  .select-with-icon-container {
+    position: relative;
+  }
+
+  .characters-filter label,
+  .characters-filter select,
+  .characters-filter input {
+    display: block;
+  }
+
+  .characters-filter label {
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  .characters-filter input {
+    width: 279px;
+    height: 46px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding-left: 24px;
+
+    border: 1.5px solid var(--color-other-black);
+    border-radius: 100px;
+
+    font-size: 14px;
+    line-height: 1.29;
+
+    color: var(--color-other-black);
+    background-color: var(--color-light-green);
+  }
+
+  .characters-filter input::placeholder,
+  .characters-filter textarea::placeholder {
+    color: var(--color-other-black);
+  }
+
+  .characters-filter select {
+    width: 132px;
+    height: 46px;
+    padding-left: 24px;
+
+    border: 1.5px solid var(--color-other-black);
+    border-radius: 100px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.29;
+
+    appearance: none;
+  }
+
+  .characters-filter .select-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+
+    fill: transparent;
+    stroke: var(--color-other-black);
+  }
+
+  #status {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #status,
+  #type {
+    margin-right: 10px;
+  }
+
+  label[for='type'],
+  label[for='gender'] {
+    margin-top: 20px;
+  }
+
+  label[for='species'],
+  label[for='type'],
+  label[for='gender'] {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .characters-filter form {
+    padding-bottom: 40px;
+  }
+
+  .character-card {
+    margin-bottom: 40px;
+  }
+
+  .character-img-wrap {
+    object-fit: cover;
+    overflow: hidden;
+
+    border: 2px solid var(--color-gree);
+    border-radius: 18px;
+  }
+
+  .character-name {
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .character-characteristics {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .character-characteristics-origin {
+    margin-top: 8 px;
+  }
+
+  .character-characteristics-location {
+    margin-top: 4px;
+  }
+
+  .character-characteristics span {
+    color: rgba(17, 17, 17, 0.5);
+  }
+
+  .load-more-btn {
+    display: block;
+    margin: 0 auto;
+    width: 107px;
+    height: 36px;
+
+    border-radius: 1000px;
+    border: none;
+
+    background: var(--color-gree);
+    color: var(--color-black);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.33;
+  }
+
+  /* Error */
+  .characters-filter-error {
+    padding-bottom: 80px;
+  }
+
+  .characters-filter-error img {
+    margin: 0 auto;
+  }
+
+  .characters-filter-error p {
+    margin-top: 8px;
+
+    font-size: 14px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+
+  .characters-filter {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .characters-filter .search-icon {
+    left: 293px;
+  }
+
+  .characters-filter input {
+    width: 335px;
+  }
+
+  .characters-filter select {
+    width: 160px;
+  }
+
+  .characters-filter .select-icon {
+    left: 121px;
+  }
+
+  /* Error */
+  .characters-filter-error p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .characters-filter {
+    padding-top: 64px;
+    padding-bottom: 128px;
+  }
+
+  .characters-filter .search-icon {
+    left: 227px;
+  }
+
+  .characters-filter label {
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .characters-filter input {
+    width: 269px;
+    height: 50px;
+    margin-bottom: 0px;
+    margin-right: 16px;
+
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  .characters-filter select {
+    height: 50px;
+
+    font-size: 16px;
+    line-height: 1.12;
+  }
+
+  #status {
+    width: 174px;
+    margin-right: 16px;
+  }
+
+  #species {
+    width: 220px;
+    margin-right: 0;
+  }
+
+  #type {
+    width: 175px;
+    margin-right: 16px;
+  }
+
+  #gender {
+    width: 167px;
+  }
+
+  .characters-filter .select-icon {
+    left: auto;
+    right: 40px;
+  }
+
+  .characters-filter .select-icon-species,
+  .characters-filter .select-icon-gender {
+    right: 24px;
+  }
+
+  label[for='type'],
+  label[for='gender'] {
+    margin-top: 16px;
+  }
+
+  .characters-filter form {
+    padding-bottom: 64px;
+  }
+
+  .character-card {
+    margin-bottom: 64px;
+  }
+
+  .characters-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+  }
+
+  .character-name {
+    margin-top: 16px;
+  }
+
+  .load-more-btn {
+    width: 126px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  /* Error */
+  .characters-filter-error {
+    padding-bottom: 128px;
+  }
+
+  .characters-filter-error img {
+    margin: 0 auto;
+    width: 388px;
+  }
+
+  .characters-filter-error p {
+    margin-top: 16px;
+
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 0 8px;
+    max-width: 1200px;
+  }
+
+  .characters-filter {
+    padding-top: 64px;
+    padding-bottom: 128px;
+  }
+
+  .characters-filter .search-icon {
+    left: 191px;
+  }
+
+  .characters-filter input {
+    width: 233px;
+  }
+
+  #status {
+    width: 165px;
+  }
+
+  #species {
+    width: 204px;
+    margin-right: 16px;
+  }
+
+  .characters-filter .select-icon {
+    right: 32px;
+  }
+
+  .characters-filter .select-icon-gender {
+    right: 16px;
+  }
+
+  label[for='type'],
+  label[for='gender'] {
+    margin-top: 0px;
+  }
+
+  .characters-filter form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .character-card {
+    margin-bottom: 64px;
+  }
+
+  .characters-gallery {
+    column-gap: 24px;
+  }
 }

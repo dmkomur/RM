@@ -1,3 +1,7 @@
+.episodes-filter {
+    padding-top: 40px;
+}
+
 .form-filter {
     display: flex;
     gap: 20px;
@@ -25,14 +29,16 @@
 }
 
 .episodes-filter-input-wrap {
-    /* position: relative; */
+    position: relative;
 }
 
-.episodes-filter-icon {
-    /* position: absolute; */
+.episodes-filter-input-icon {
+    position: absolute;
     right: 14px;
     top: 50%;
     transform: translateY(-50%);
+    fill: transparent;
+    stroke: rgba(17, 17, 17, 1)
 }
 
 
@@ -58,24 +64,30 @@
     padding-left: 24px;
     color: #111111;
     position: relative;
+    appearance: none;
 }
 
-.pisodes-filter-select-wrap {
+.episodes-filter-select-icon {
     position: absolute;
-    top: 300px;
-
-
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: transparent;
+    stroke: rgba(17, 17, 17, 1)
 }
+
+/* .pisodes-filter-select-wrap {
+    position: absolute;
+    
+} */
 
 .episodes-filter-select-field {
-    border: 3px solid #111111;;
-    height: 500px;
-    width: 500px;
+   position: relative;
 }
 
-.episodes-filter-select:focus {
+/* .episodes-filter-select:focus {
     background-color: #DAF836;
-}
+} */
 
 
 
@@ -84,6 +96,10 @@
 }
   
 @media screen and (min-width: 768px) {
+    /* .episodes-filter {
+        padding-top: 64px;
+    } */
+
     .form-filter {
         gap: 16px;
         justify-content: center;
