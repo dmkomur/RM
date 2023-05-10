@@ -51,10 +51,11 @@ async function onLoadBtnClick(event) {
 
     
 async function onCharCardClick(event) {
+    if (event.target.closest('.character-card')) { console.log('object');}
+    console.log(event.target.closest('.character-card'));
     const currentId = event.target.closest('.character-card').dataset.id;
     const response = await query.getChar(currentId);
     const markupToPaste = await marckupChar(response);
-    // console.log(markupToPaste);
     modalBackdropCharRef.classList.remove('is-hidden')
     modalBackdropCharRef.innerHTML = markupToPaste;
    }
