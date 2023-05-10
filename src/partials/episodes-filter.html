@@ -1,38 +1,99 @@
-<link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.css"
+/>
+
 <section class="episodes-filter">
-    <div class="container">
+  <div class="container">
     <h2 class="hidden">Episodes filter</h2>
     <form action="" class="form-filter">
-        <div class="episodes-filter-input-field">
-        <label class="episodes-filter-text" for="episodes-filter-user-name">Name</label>
+      <div class="episodes-filter-input-field">
+        <label class="episodes-filter-text" for="episodes-filter-user-name"
+          >Name</label
+        >
         <div class="episodes-filter-input-wrap">
-        <input 
+          <input
             class="episodes-filter-input"
-            id="episodes-filter-user-name" 
-            type="text" 
-            name="episodes-filter-user-name" 
+            id="episodes-filter-user-name"
+            type="text"
+            name="episodes-filter-user-name"
             placeholder="Enter name"
-            />
-            <svg class="episodes-filter-input-icon"  width="12px" height="12px">
-                <use href="../img/symbol.svg#icon-search"></use>
-            </svg>
+          />
+          <svg class="episodes-filter-input-icon" width="12px" height="12px">
+            <use href="../img/symbol.svg#icon-search"></use>
+          </svg>
         </div>
-        </div>
-        <div class="episodes-filter-selectwithlabel">
+      </div>
+      <div class="episodes-filter-selectwithlabel">
         <label for="episode" class="episodes-filter-text"> Episode code </label>
         <div class="episodes-filter-select-field">
-            <select  name="season" id="episode">
-            </select>
-        <svg class="episodes-filter-select-icon"  width="30px" height="30px">
-            <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
-    </div>
-    </div>
+          <select>
+            <option value="">All Season</option>
+            <option value="s01">1 Season</option>
+            <option value="s01e01">ㅤ1 series</option>
+            <option value="s01e02">ㅤ2 series</option>
+            <option value="s01e03">ㅤ3 series</option>
+            <option value="s01e04">ㅤ4 series</option>
+            <option value="s01e05">ㅤ5 series</option>
+            <option value="s01e06">ㅤ6 series</option>
+            <option value="s01e07">ㅤ7 series</option>
+            <option value="s01e08">ㅤ8 series</option>
+            <option value="s01e09">ㅤ9 series</option>
+            <option value="s01e010">ㅤ10 series</option>
+            <option value="s01e011">ㅤ11 series</option>
+            <option value="s02">2 Season</option>
+            <option value="s02e01">ㅤ1 series</option>
+            <option value="s02e02">ㅤ2 series</option>
+            <option value="s02e03">ㅤ3 series</option>
+            <option value="s02e07">ㅤ4 series</option>
+            <option value="s02e05">ㅤ5 series</option>
+            <option value="s02e06">ㅤ6 series</option>
+            <option value="s02e07">ㅤ7 series</option>
+            <option value="s02e08">ㅤ8 series</option>
+            <option value="s02e09">ㅤ9 series</option>
+            <option value="s02e010">ㅤ10 series</option>
+            <option value="s03">3 Season</option>
+            <option value="s03e01">ㅤ1 series</option>
+            <option value="s03e02">ㅤ2 series</option>
+            <option value="s03e03">ㅤ3 series</option>
+            <option value="s03e04">ㅤ4 series</option>
+            <option value="s03e05">ㅤ5 series</option>
+            <option value="s03e06">ㅤ6 series</option>
+            <option value="s03e07">ㅤ7 series</option>
+            <option value="s03e08">ㅤ8 series</option>
+            <option value="s03e09">ㅤ9 series</option>
+            <option value="s03e010">ㅤ10 series</option>
+            <option value="s04">4 Season</option>
+            <option value="s04e01">ㅤ1 series</option>
+            <option value="s04e02">ㅤ2 series</option>
+            <option value="s04e03">ㅤ3 series</option>
+            <option value="s04e04">ㅤ4 series</option>
+            <option value="s04e05">ㅤ5 series</option>
+            <option value="s04e06">ㅤ6 series</option>
+            <option value="s04e07">ㅤ7 series</option>
+            <option value="s04e08">ㅤ8 series</option>
+            <option value="s04e09">ㅤ9 series</option>
+            <option value="s04e010">ㅤ10 series</option>
+            <option value="s05">5 Season</option>
+            <option value="s05e01">ㅤ1 series</option>
+            <option value="s05e02">ㅤ2 series</option>
+            <option value="s05e03">ㅤ3 series</option>
+            <option value="s05e04">ㅤ4 series</option>
+            <option value="s05e05">ㅤ5 series</option>
+            <option value="s05e06">ㅤ6 series</option>
+            <option value="s05e07">ㅤ7 series</option>
+            <option value="s05e08">ㅤ8 series</option>
+            <option value="s05e09">ㅤ9 series</option>
+            <option value="s05e010">ㅤ10 series</option>
+          </select>
+        </div>
+      </div>
     </form>
     <div class="gallery"></div>
-    <button type="button" class="load-more-btn episodes-filter-btn">Load more</button>
-    </div>
+    <button type="button" class="load-more-btn episodes-filter-btn">
+      Load more
+    </button>
+  </div>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>
 <script type="module" src="../episodes-filter.js"></script>
