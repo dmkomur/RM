@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Error</title>
-
+    <!-- <title>Error</title> -->
+    <title>Error - Rick&amp;Morty</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +17,96 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <a href="./index.html">Go to home</a>
+    <div class="page404-container">
+      <a class="page404-logo" href="./index.html">
+        <picture>
+          <source
+            srcset="
+              ./img/page404/logo-mob@1.webp 1x,
+              ./img/page404/logo-mob@2.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./img/page404/logo-mob@1.png 1x,
+              ./img/page404/logo-mob@2.png 2x
+            "
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./img/page404/logo-tablet@1.webp 1x,
+              ./img/page404/logo-tablet@2.webp 2x
+            "
+            type="image/webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/page404/logo-tablet@1.png 1x,
+              ./img/page404/logo-tablet@2.png 2x
+            "
+            type="image/png"
+            media="(min-width: 768px)"
+          />
+
+          <img src="./img/page404/logo-mob@1.png" alt="logo" />
+        </picture>
+      </a>
+
+     <div  class="page404-rick-img">
+        <picture>
+          <source
+            srcset="
+              ./img/page404/rick-sanchez-mob@1.webp 1x,
+              ./img/page404/rick-sanchez-mob@2.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./img/page404/rick-sanchez-mob@1.png 1x,
+              ./img/page404/rick-sanchez-mob@2.png 2x
+            "
+            type="image/png"
+            media="(max-width: 767px)"
+          />
+  
+          <source
+          srcset="
+            ./img/page404/rick-sanchez-tablet@1.webp 1x,
+            ./img/page404/rick-sanchez-tablet@2.webp 2x
+          "
+          type="image/webp"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/page404/rick-sanchez-tablet@1.png 1x,
+            ./img/page404/rick-sanchez-tablet@2.png 2x
+          "
+          type="image/png"
+          media="(min-width: 768px)"
+        />
+          <img src="./img/page404/rick-sanchez-mob@1.png" alt="Rick Sanchez" />
+        </picture>
+     </div>
+      <div class="page404-bg-gradient"></div>
+      <p class="page404-text404">404</p>
+
+      <p class="page404-error-message">
+        Wubba Lubba Dub Dub! That page can&rsquo;t be found.
+      </p>
+      
+      <a class="page404-back-home-btn" href="./index.html">
+      <p>
+       Back home
+      </p>
+    </a>
+    </div>
   </body>
 </html>
