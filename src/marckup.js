@@ -16,16 +16,17 @@ export async function marckupChar(data) {
   
     const arr = data.episode.map(el => query.getNextPage(el))
     const episodesArray = await Promise.all(arr);
-    const stringOfEpisodes = marckupSmallEpisodes(episodesArray);
-
+  const stringOfEpisodes = marckupSmallEpisodes(episodesArray);
     return  `<div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href=""></use>
+        <use href="../img/symbol.svg#icon-close"></use>
       </svg>
     </button>
     <div>
-      <img src="${data.image}" alt="${data.name}" class="modal-img" />
+      <div class="modal-img-wrap">
+        <img src="${data.image}" alt="${data.name}" class="modal-img" />
+      </div>
       <ul class="character-characteristics-list">
         <li class="character-characteristics-item">
           <p class="title-characteristic">Status</p>
@@ -55,29 +56,78 @@ export async function marckupChar(data) {
     </div>
     <div class="character-episodes-contsiner">
       <h2 class="character-episodes-title">Episodes</h2>
-      <ul class="character-episodes-list">
-        ${stringOfEpisodes}
+      <ul data-simplebar class="character-episodes-list">
+      <div class="little-wrap">
+             ${stringOfEpisodes}     
+        </div>
       </ul>
     </div>
-    </div>`
+  </div>`
 }
+
 
 function marckupSmallEpisodes(data) {
     return data.map(el =>
-        `<li class="character-episodes-item" data-id="${el.id}>
+        `<li class="character-episodes-item" data-id="${el.id}">
             <div class="character-episodes-item-wrap">
-            <h3 class="character-episodes-item-title">${el.name}</h3>
-            <ul class="character-episodes-item-characteristic-list">
+              <h3 class="character-episodes-item-title">${el.name}</h3>
+              <ul class="character-episodes-item-characteristic-list">
                 <li class="character-episodes-item-characteristic-item">
-                    <p class="title-characteristic">Season</p>
-                    <p class="text-characteristic">${el.episode}</p></li>
-                <li class="character-episodes-item-characteristic-item">
-                    <p class="title-characteristic">Air date</p>
-                    <p class="text-characteristic-air-date">${el.air_date}</p>
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">${el.episode}</p>
                 </li>
-            </ul>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">${el.air_date}</p>
+                </li>
+              </ul>
             </div>
+          </li>
+    `).join('')
+    
+}
+
+
+
+function marckupSmallCharacters(data) {
+    return data.map(el =>
+        `<li class="episodes-popup-charlist-item" data-id="${el.id}">
+          <div class="episodes-popup-image-thumb">
+            <img src="${el.image}" />
+          </div>
+          <p class="episodes-popup-charlist-text">${el.name}</p>
         </li>
     `).join('')
     
 }
+
+export async function marckupEpi(data) {
+    const arr = data.characters.map(el => query.getNextPage(el))
+    const episodesArray = await Promise.all(arr);
+    const stringOfCharacters = marckupSmallCharacters(episodesArray);
+    return  `<div class="episode-popup">
+    <button class="episodes-popup-btn-close" type="button">
+      <svg class="episodes-popup-btn-close-icon" width="20" height="20">
+        <use href="../img/symbol.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="episode-popup-card">
+      <h3 class="episode-popup-header">${data.name}</h3>
+      <div class="episode-popup-info">
+        <div>
+          <p class="episode-popup-info-header">ID</p>
+          <p class="episode-popup-info-text">${data.id}</p>
+        </div>
+        <div>
+          <p class="episode-popup-info-header">Air date</p>
+          <p class="episode-popup-info-text">${data.air_date}</p>
+        </div>
+      </div>
+      <h3 class="episode-popup-header">Characters</h3>
+      <ul class="episodes-popup-charlist">
+       ${stringOfCharacters}
+      </ul>
+    </div>
+  </div>`
+}
+
