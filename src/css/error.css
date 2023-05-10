@@ -1,3 +1,143 @@
-.test {
-    text-emphasis: none;
+/* .test {
+  text-emphasis: none;
+} */
+
+body {
+  background-color: var(--color-black);
+}
+
+.page404-container {
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.page404-logo {
+  display: inline-block;
+}
+
+.page404-rick-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 141px;
+}
+
+.page404-text404 {
+  margin-top: 20px;
+  text-align: center;
+
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+
+  background: linear-gradient(180deg, #a1d737 50%, rgba(161, 215, 55, 0) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.page404-bg-gradient {
+  position: absolute;
+  top: 160px;
+  width: 335px;
+  height: 324px;
+  /* margin-top: 95px; */
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-radius: 1000px;
+  background: linear-gradient(
+    180deg,
+    #14182c 36.46%,
+    rgba(52, 56, 127, 0) 100%
+  );
+  filter: blur(94px);
+  z-index: -1;
+}
+
+.page404-error-message {
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--color-white);
+  margin-top: 14px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  width: 186px;
+  margin-left: auto;
+  margin-right: auto;
+  white-space: normal;
+  font-weight: 400;
+}
+
+.page404-back-home-btn {
+  display: flex;
+  color: var(--color-white);
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  width: 111px;
+  height: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.3);
+  border-radius: 1000px;
+}
+
+@media screen and (min-width: 768px) {
+  .page404-container {
+    max-width: 768px;
+    padding: 12px 32px;
+  }
+  .page404-bg-gradient {
+    width: 526px;
+    height: 476px;
+    top: 311px;
+    left: 52%;
+    filter: blur(47px);
+  }
+
+  .page404-rick-img {
+    margin-top: 161px;
+  }
+
+  .page404-text404 {
+    font-size: 130px;
+    margin-top: 16px;
+  }
+  .page404-error-message {
+    width: auto;
+    font-size: 16px;
+    line-height: 1.12;
+    margin-top: 16px;
+  }
+
+  .page404-back-home-btn {
+    margin-top: 32px;
+    width: 131px;
+    height: 42px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .page404-container {
+      max-width: 1200px;
+      padding: 6px 132px;
+    }
+
+    .page404-rick-img {
+      margin-top: 65px;
+    }
+
+    .page404-bg-gradient {
+      width: 526px;
+      height: 476px;
+      top: 195px;
+      left: 51%;
+      filter: blur(47px);
+    }
+  }
 }

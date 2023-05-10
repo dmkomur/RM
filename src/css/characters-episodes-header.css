@@ -7,32 +7,23 @@
     max-width: 100%;
     padding: 0 20px;
   }
-  .sticky {
-    position: fixed;
-    top: -10px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    transform: translateY(-10px);
-    padding-bottom: 10px;
-    background-color: var(--color-black);
-  }
+
   .header {
     background: var(--color-black);
     display: flex;
     align-items: baseline;
-    padding-top: 20px;
-    z-index: 1;
-    transition: transform 300ms linear;
-    transform: translateY(0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
   }
 
   .header-list {
     display: flex;
-  }
-
-  .header + .sticky {
-    padding-top: 0;
   }
 
   .flex {
@@ -175,7 +166,7 @@
     text-align: left;
   }
 
-  .text-characters {
+  .text-this-ch {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.285;
@@ -207,15 +198,19 @@
   }
 
   .header-characters {
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: var(--color-black);
     display: flex;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   .rick-mob {
     padding-top: 48px;
-    margin-right: auto;
-    margin-left: auto;
   }
 
   .hero-bg {
@@ -314,7 +309,7 @@
   .search-form {
     font-size: 12px;
   }
-  .modal-icon{
+  .modal-icon {
     transform: translateY(55%);
   }
 
@@ -324,6 +319,8 @@
 
   .hero-bg {
     max-width: 100%;
+    background-size: contain;
+    background-position: bottom;
   }
 
   .header-nav-characters {
@@ -351,6 +348,12 @@
     display: none;
   }
 }
+@media screen and (min-width: 550px) {
+  .hero-bg {
+    background-size: cover;
+    background-position: top;
+  }
+}
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 
 /* ///////////////////////////////////////////////////////////////////////////////////// */
@@ -360,6 +363,10 @@
   .container {
     max-width: 768px;
     padding: 0 32px;
+  }
+  .header {
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
   .flex {
     background-color: var(--color-black);
@@ -455,7 +462,8 @@
   }
 
   .header-characters {
-    padding-top: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
   .characters {
@@ -465,7 +473,7 @@
     margin-bottom: 20px;
   }
 
-  .text-characters {
+  .text-this-ch {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.125;
@@ -485,6 +493,8 @@
 
   .rick-mob {
     padding: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .hero-flex {
@@ -548,7 +558,7 @@
   .disno-text {
     display: none;
   }
-  .modal-icon{
+  .modal-icon {
     transform: translateY(65%);
   }
 
@@ -581,7 +591,7 @@
     line-height: 1;
     margin-bottom: 16px;
   }
-  .text-characters {
+  .text-this-ch {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 32px;
