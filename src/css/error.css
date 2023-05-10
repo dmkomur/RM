@@ -2,7 +2,7 @@
   text-emphasis: none;
 } */
 
-body {
+.color-404 {
   background-color: var(--color-black);
 }
 
