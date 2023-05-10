@@ -16,6 +16,7 @@ const modalBackdropCharRef = document.querySelector('.backdrop')
 const modalBtnCloseRef = document.querySelector('.modal-button')
 const modalCharListRef = document.querySelector('.character-episodes-list')
 
+
 formCharRef.addEventListener('input', debounce(onFormCharSubbit, 350));
 
 
@@ -70,7 +71,7 @@ async function onBigCharCardClick(event) {
     const bre = document.querySelector('.character-episodes-list');
     new SimpleBar(bre);
 }
-async function onSmallCharCardClick(event) {
+ function onSmallCharCardClick(event) {
 console.log('object');
 }
 async function onCharCardClick(currentId) {
