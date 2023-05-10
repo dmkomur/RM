@@ -20,6 +20,7 @@
     "modern-normalize": "^1.1.0",
     "rickmortyapi": "^2.3.0",
     "swiper": "^9.2.4",
+    "tom-select": "^2.2.2",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }
