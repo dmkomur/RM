@@ -1,7 +1,5 @@
 
 import {RickAndMortyApi} from './episodes-api.js';
-import TomSelect from 'tom-select';
-import '../node_modules/tom-select/dist/css/tom-select.css';
 
 const rickAndMortyApi = new RickAndMortyApi();
 const galleryList = document.querySelector('.gallery');
@@ -21,12 +19,6 @@ const responsePage3 = await rickAndMortyApi.fetchEpisodeByQuary();
 rickAndMortyApi.page =1;
 const allEpisodes = [...responsePage1.data.results, ...responsePage2.data.results, ...responsePage3.data.results]
 console.log(allEpisodes);
-console.log(selectList);
-selectList.innerHTML =  createDropdownEl(allEpisodes);
-const settings = {};
-new TomSelect('#episode', settings);
-const itemEl = document.querySelector('.item');
-console.log(itemEl.dataset.value);
 }
 
 onSearchFormSubmit()
@@ -80,15 +72,4 @@ function createGalleryMarkup(data) {
 // }
 // selectList.addEventListener('click', createDropdownEl);
  
-function createDropdownEl(allEpisodes) {
-    const element = `<option>All serias</option><div class="episodes-filter-select-wrap dropdown-menu" id="dropdownepisodes">${allEpisodes
-    .map(({id}) => {
-        return(`
-        <option>${id} serias</option>
-        `)
-    })
-    .join('')}</div>`
-    console.log(element)
-    return element;
-}
 
