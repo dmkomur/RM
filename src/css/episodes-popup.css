@@ -93,7 +93,7 @@
     font-family: 'Poppins';
     font-size: 14px;
     line-height: 1.29;
-    max-width: 50px;
+    width: 50px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -101,7 +101,7 @@
 }
 @media screen and (min-width: 375px) {
   .episodes-popup-charlist-text {
-    max-width: 57px;
+    width: 57px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -139,6 +139,6 @@
     margin-bottom: 32px;
   }
   .episodes-popup-charlist-text {
-    max-width: 53px;
+    width: 53px;
   }
 }
