@@ -15,8 +15,6 @@ const loadBtnCharRef = document.querySelector('.load-more-btn')
 const modalBackdropCharRef = document.querySelector('.backdrop')
 const modalBtnCloseRef = document.querySelector('.modal-button')
 const modalCharListRef = document.querySelector('.character-episodes-list')
-console.dir(modalCharListRef);
-console.dir(modalBtnCloseRef);
 
 formCharRef.addEventListener('input', debounce(onFormCharSubbit, 350));
 
@@ -26,7 +24,8 @@ async function onFormCharSubbit(event) {
     const response = await query.getCharacters();
     if (!response) {
         charactersList.innerHTML = '';
-        charactersErrorRef.classList.remove('hidden')
+        charactersErrorRef.classList.remove('hidden');
+        offLoadBtn();
         return
     }
     charactersList.addEventListener('click', onBigCharCardClick);
@@ -61,18 +60,18 @@ async function onEpiCardClick(currentId) {
     const markupToPaste = await marckupEpi(response);
     modalBackdropCharRef.innerHTML = markupToPaste;
    }
-async function onBigCharCardClick(event) {
+async function onBigCharCardClick(event) {    
     charactersList.removeEventListener('click', onCharCardClick);
     modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
-    modalCharListRef.addEventListener('click', onSmallEpiCardClick);
+    modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
     const currentId = event.target.closest('.character-card').dataset.id;  
     await onCharCardClick(currentId);
     modalBackdropCharRef.classList.remove('is-hidden');
-     const bre = document.querySelector('.character-episodes-list');
-     new SimpleBar(bre);
+    const bre = document.querySelector('.character-episodes-list');
+    new SimpleBar(bre);
 }
 async function onSmallCharCardClick(event) {
-
+console.log('object');
 }
 async function onCharCardClick(currentId) {
     const response = await query.getChar(currentId);
