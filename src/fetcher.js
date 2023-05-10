@@ -11,7 +11,7 @@
         this.page = 1;
         this.currentPage = '';
         this.totalPages = 0;
-        this.episode = '';
+        this.episode = 's06';
         this.episodeName = '';
         this.nextPage = '';
     }

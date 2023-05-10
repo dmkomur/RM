@@ -13,8 +13,6 @@ const charactersList = document.querySelector('.characters-gallery');
 const charactersErrorRef = document.querySelector('.characters-filter-error')
 const loadBtnCharRef = document.querySelector('.load-more-btn')
 const modalBackdropCharRef = document.querySelector('.backdrop')
-const modalBtnCloseRef = document.querySelector('.modal-button')
-const modalCharListRef = document.querySelector('.character-episodes-list')
 
 
 formCharRef.addEventListener('input', debounce(onFormCharSubbit, 350));
@@ -50,29 +48,40 @@ async function onLoadBtnClick(event) {
 
 
 async function onSmallEpiCardClick(event) {
-    // modalCharListRef.removeEventListener('click', onSmallEpicardClick);
-console.log('object');
-    const currentId = event.target.closest('.character-episodes-item').dataset.id;
+ 
+    const currentId = event.target.closest('.character-episodes-item').dataset.id;  
     await onEpiCardClick(currentId);
+    const modalBtnCloseRef = document.querySelector('.episodes-popup-btn-close');
+    modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
+    const modalEpiListRef = document.querySelector('.episodes-popup-charlist');
+    modalEpiListRef.addEventListener('click', onSmallCharCardClick);
 }  
   
 async function onEpiCardClick(currentId) {
     const response = await query.getEpi(currentId);
     const markupToPaste = await marckupEpi(response);
     modalBackdropCharRef.innerHTML = markupToPaste;
-   }
+       }
 async function onBigCharCardClick(event) {    
-    charactersList.removeEventListener('click', onCharCardClick);
-    modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
-    modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
     const currentId = event.target.closest('.character-card').dataset.id;  
     await onCharCardClick(currentId);
     modalBackdropCharRef.classList.remove('is-hidden');
     const bre = document.querySelector('.character-episodes-list');
     new SimpleBar(bre);
+    const modalBtnCloseRef = document.querySelector('.modal-button')
+    const modalCharListRef = document.querySelector('.little-wrap')
+    charactersList.removeEventListener('click', onCharCardClick);
+    modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
+    modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
 }
- function onSmallCharCardClick(event) {
-console.log('object');
+async function onSmallCharCardClick(event) {
+ 
+    const currentId = event.target.closest('.episodes-popup-charlist-item').dataset.id;  
+    await onCharCardClick(currentId);
+    const modalBtnCloseRef = document.querySelector('.modal-button');
+    modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
+    const modalCharListRef = document.querySelector('.little-wrap')
+    modalCharListRef.addEventListener('click', onSmallEpiCardClick);      
 }
 async function onCharCardClick(currentId) {
     const response = await query.getChar(currentId);
