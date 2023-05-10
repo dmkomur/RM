@@ -1,4 +1,4 @@
-
+<link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
 <section class="episodes-filter">
     <div class="container">
     <h2 class="hidden">Episodes filter</h2>
@@ -18,29 +18,21 @@
             </svg>
         </div>
         </div>
-        <div>
+        <div class="episodes-filter-selectwithlabel">
         <label for="episode" class="episodes-filter-text"> Episode code </label>
         <div class="episodes-filter-select-field">
-            <select  name="season" id="episode" class="episodes-filter-select dropdown-toggle">
-                <div class="episodes-filter-select-wrap dropdown-menu">
-                    <option class="dropdown-item" value="s1">All series</option>
-                    <optgroup class="dropdown-menu-item" label="1 season">
-                      <option class="dropdown-item" value="1">1 series</option>
-                    </optgroup>
-                    <optgroup label="2 season">
-                        <option value="1">1 series</option>
-                      </optgroup>
-                </div>
+            <select  name="season" id="episode">
             </select>
-        <svg class="episodes-filter-select-icon"  width="9px" height="4.5px">
+        <svg class="episodes-filter-select-icon"  width="30px" height="30px">
             <use href="../img/symbol.svg#icon-jackdaw"></use>
         </svg>
     </div>
     </div>
     </form>
     <div class="gallery"></div>
-    <button type="button" class="load-more">Load more</button>
+    <button type="button" class="load-more-btn episodes-filter-btn">Load more</button>
     </div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
 <script type="module" src="../episodes-filter.js"></script>
