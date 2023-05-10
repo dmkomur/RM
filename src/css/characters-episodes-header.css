@@ -8,7 +8,7 @@
     padding: 0 20px;
   }
 
-  .header {
+  .header-main-page {
     background: var(--color-black);
     display: flex;
     align-items: baseline;
@@ -22,32 +22,32 @@
     z-index: 3;
   }
 
-  .header-list {
+  .header-list-nav {
     display: flex;
   }
 
-  .flex {
+  .flex-header {
     display: flex;
     align-items: baseline;
   }
 
-  .flex1 {
+  .flex1-header {
     display: flex;
     align-items: center;
   }
 
-  .search-block {
+  .search-block-header {
     margin-left: auto;
   }
 
-  .logo-page {
+  .logo-page-head {
     display: flex;
     align-items: center;
     margin-left: 0;
     margin-right: auto;
   }
 
-  .nav-characters {
+  .nav-characters-item {
     max-width: 107px;
   }
 
@@ -62,7 +62,7 @@
     border-radius: 1000px;
   }
 
-  .nav-episodes {
+  .nav-episodes-item {
     max-width: 96px;
   }
 
@@ -77,7 +77,7 @@
     border: 1px solid var(--border-color);
   }
 
-  .container-header {
+  .container-header-block {
     display: flex;
     align-items: center;
   }
@@ -86,14 +86,14 @@
     display: flex;
   }
 
-  .loop {
+  .loop-search-flip {
     display: flex;
     margin-left: auto;
     max-width: 103px;
     position: relative;
   }
 
-  .modal-icon {
+  .search-btn-icon {
     position: absolute;
     left: 0%;
     top: 0%;
@@ -104,7 +104,7 @@
     padding: 0;
   }
 
-  .bg-color {
+  .bg-color-hero {
     justify-content: center;
     display: grid;
     background-image: url(../img/hero-header-img/small-green-dot.webp);
@@ -116,7 +116,7 @@
     margin-left: auto;
   }
 
-  .search-form {
+  .search-form-header {
     font-weight: 600;
     font-size: 10px;
     line-height: 1.333;
@@ -139,7 +139,7 @@
     padding-bottom: 4px;
   }
 
-  .text-hero {
+  .text-hero-block {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.285;
@@ -151,12 +151,12 @@
     max-width: 291px;
   }
 
-  .container-hero {
+  .container-hero-block {
     margin-top: 0;
     padding-bottom: 148px;
   }
 
-  .characters {
+  .characters-episodes {
     font-weight: 600;
     font-size: 40px;
     line-height: 1.1;
@@ -176,12 +176,12 @@
     margin-bottom: 32px;
   }
 
-  .characters-hero {
+  .characters-hero-img {
     margin-top: 0;
     padding-bottom: 80px;
   }
 
-  .go-back {
+  .go-back-home {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.285;
@@ -197,7 +197,7 @@
     max-width: 103px;
   }
 
-  .header-characters {
+  .header-characters-episods {
     padding-top: 10px;
     padding-bottom: 10px;
     background: var(--color-black);
@@ -213,7 +213,7 @@
     padding-top: 48px;
   }
 
-  .hero-bg {
+  .hero-bg-color {
     background-color: var(--color-black);
     background-image: url(../img/hero-header-img/bg-ch-ep.webp);
     display: grid;
@@ -225,7 +225,7 @@
     padding-top: 62px;
   }
 
-  .svg-img {
+  .svg-img-btn-head {
     fill: transparent;
     stroke: var(--color-white);
   }
@@ -234,7 +234,7 @@
     padding-top: 20px;
   }
 
-  .bg-hero {
+  .bg-hero-color {
     background-color: var(--color-black);
     background-size: cover;
     background-position: center;
@@ -251,7 +251,7 @@
     background: transparent;
     stroke: var(--color-white);
   }
-  .scroll-btn {
+  .scroll-btn-dunno {
     background-color: var(--color-black);
     outline: none;
     border: 1px solid var(--border-color);
@@ -260,6 +260,7 @@
     right: 20px;
     bottom: 40px;
     position: fixed;
+    z-index: 3;
   }
 
   .nlo-tablet {
@@ -299,17 +300,17 @@
     max-width: 375px;
     padding: 0 20px;
   }
-  .flex {
+  .flex-header {
     background-color: var(--color-black);
   }
-  .flex1 {
+  .flex1-header {
     background-color: var(--color-black);
   }
 
-  .search-form {
+  .search-form-header {
     font-size: 12px;
   }
-  .modal-icon {
+  .search-btn-icon {
     transform: translateY(55%);
   }
 
@@ -317,7 +318,7 @@
     font-size: 12px;
   }
 
-  .hero-bg {
+  .hero-bg-color {
     max-width: 100%;
     background-size: contain;
     background-position: bottom;
@@ -327,7 +328,7 @@
     font-size: 12px;
   }
 
-  .bg-hero {
+  .bg-hero-color {
     max-width: 100%;
     padding-top: 100px;
   }
@@ -349,7 +350,7 @@
   }
 }
 @media screen and (min-width: 550px) {
-  .hero-bg {
+  .hero-bg-color {
     background-size: cover;
     background-position: top;
   }
@@ -364,25 +365,25 @@
     max-width: 768px;
     padding: 0 32px;
   }
-  .header {
+  .header-main-page {
     padding-top: 12px;
     padding-bottom: 12px;
   }
-  .flex {
+  .flex-header {
     background-color: var(--color-black);
   }
-  .flex1 {
+  .flex1-header {
     background-color: var(--color-black);
   }
 
-  .modal-icon {
+  .search-btn-icon {
     transform: translateY(77%);
   }
   .big-logo-mobile {
     padding-bottom: 0;
   }
 
-  .bg-hero {
+  .bg-hero-color {
     max-width: 100%;
     background-position: center;
     background-image: url(../img/hero-header-img/bg-nlo-tablet.webp);
@@ -392,7 +393,7 @@
     background-size: initial;
   }
 
-  .text-hero {
+  .text-hero-block {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.125;
@@ -430,26 +431,26 @@
     padding: 12px 24px;
   }
 
-  .search-form {
+  .search-form-header {
     font-size: 14px;
     line-height: 1.285;
     padding: 12px 24px;
     padding-left: 50px;
   }
 
-  .loop {
+  .loop-search-flip {
     max-width: 124px;
   }
 
-  .modal-icon {
+  .search-btn-icon {
     margin-left: 24px;
   }
 
-  .nav-characters {
+  .nav-characters-item {
     max-width: 126px;
   }
 
-  .nav-episodes {
+  .nav-episodes-item {
     max-width: 126px;
   }
 
@@ -461,12 +462,12 @@
     display: flex;
   }
 
-  .header-characters {
+  .header-characters-episods {
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  .characters {
+  .characters-episodes {
     font-weight: 600;
     font-size: 60px;
     line-height: 1;
@@ -481,7 +482,7 @@
     margin-bottom: 44px;
   }
 
-  .characters-hero {
+  .characters-hero-img {
     display: flex;
     padding-bottom: 208px;
     gap: 24px;
@@ -497,28 +498,28 @@
     margin-left: auto;
   }
 
-  .hero-flex {
+  .hero-flex-text {
     padding-top: 53px;
   }
 
-  .hero-bg {
+  .hero-bg-color {
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background-image: none;
     padding-top: 141px;
   }
 
-  .go-back {
+  .go-back-home {
     font-size: 14px;
     line-height: 1.285;
     padding: 12px 24px;
   }
 
-  .container-hero {
+  .container-hero-block {
     padding-bottom: 64px;
   }
 
-  .bg-color {
+  .bg-color-hero {
     background-image: url(../img/hero-header-img/green-dot-tablet.webp);
     background-position: right 24% bottom 22%;
     max-width: 704px;
@@ -536,29 +537,29 @@
     padding: 0 8px;
     max-width: 1200px;
   }
-  .flex {
+  .flex-header {
     background-color: var(--color-black);
   }
-  .flex1 {
+  .flex1-header {
     background-color: var(--color-black);
   }
-  .bg-hero {
+  .bg-hero-color {
     max-width: 100%;
   }
 
-  .text-hero {
+  .text-hero-block {
     margin: 0;
     max-width: 311px;
     padding-top: 155px;
   }
-  .hero-bg {
+  .hero-bg-color {
     padding-top: 100px;
   }
 
   .disno-text {
     display: none;
   }
-  .modal-icon {
+  .search-btn-icon {
     transform: translateY(65%);
   }
 
@@ -574,7 +575,7 @@
     margin-left: auto;
   }
 
-  .bg-color {
+  .bg-color-hero {
     padding: 0;
     margin: 0;
     background-position: right 13% bottom 22%;
@@ -585,7 +586,7 @@
   .desktop {
     display: block;
   }
-  .characters {
+  .characters-episodes {
     font-weight: 600;
     font-size: 100px;
     line-height: 1;
@@ -600,12 +601,12 @@
   .rick-mob {
     margin-right: 0;
   }
-  .characters-hero {
+  .characters-hero-img {
     padding-bottom: 126px;
     background-image: url(../img/hero-header-img/blocks-desktop.webp);
     background-position: right -20% top -20%;
   }
-  .container-hero {
+  .container-hero-block {
     padding-top: 54px;
     padding-bottom: 87px;
   }
