@@ -3,7 +3,8 @@
   href="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.css"
 />
 
-<section class="characters-filter container">
+<section class="characters-filter">
+  <div class="container">
   <h2 class="hidden">Characters filter</h2>
   <form class="characters-filter-form">
     <div class="input-with-label-container">
@@ -19,37 +20,39 @@
     </div>
 
     <!-- Filter select -->
-    <div class="select-container">
+    <div class="select-with-label-container">
       <label for="status">Status</label>
-      <div class="select-with-icon-container">
+      <div class="select-container-status">
         <select id="status" name="status">
           <option value="">-</option>
           <option value="alive">Alive</option>
           <option value="dead">Dead</option>
+          <option value="unknown">Unknown</option>
         </select>
-        <!-- <svg class="select-icon" width="9" height="4.5">
-          <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg> -->
       </div>
     </div>
 
-    <div class="select-container">
+    <div class="select-with-label-container">
       <label for="species">Species</label>
-      <div class="select-with-icon-container">
+      <div class="select-container-species">
         <select id="species" name="species">
           <option value="">-</option>
           <option value="human">Human</option>
           <option value="alien">Alien</option>
+          <option value="mythological creature">Mythological Creature</option>
+          <option value="alien">Humanoid</option>
+          <option value="animal">Animal</option>
+          <option value="cronenberg">Cronenberg</option>
+          <option value="poopybutthole">Poopybutthole</option>
+          <option value="robot">Robot</option>
+          <option value="disease">Disease</option>
         </select>
-        <!-- <svg class="select-icon select-icon-species" width="9" height="4.5">
-          <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg> -->
       </div>
     </div>
 
-    <div class="select-container">
+    <div class="select-with-label-container">
       <label for="type">Type</label>
-      <div class="select-with-icon-container">
+      <div class="select-container-type">
         <select id="type" name="type">
           <option value="">-</option>
           <option value="parasite">Parasite</option>
@@ -57,23 +60,19 @@
             Human with ants in his eyes
           </option>
         </select>
-        <!-- <svg class="select-icon" width="9" height="4.5">
-          <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg> -->
       </div>
     </div>
 
-    <div class="select-container">
+    <div class="select-with-label-container">
       <label for="gender">Gender</label>
-      <div class="select-with-icon-container">
+      <div class="select-container-gender">
         <select id="gender" name="gender">
           <option value="">All</option>
           <option value="female">Female</option>
           <option value="male">Male</option>
+          <option value="genderless">Genderless</option>
+          <option value="unknown">Unknown</option>
         </select>
-        <!-- <svg class="select-icon select-icon-gender" width="9" height="4.5">
-          <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg> -->
       </div>
     </div>
   </form>
@@ -85,8 +84,12 @@
         <img src="http://surl.li/gvvhe" alt="" width="335" />
       </div>
       <p class="character-name">Beebo</p>
-      <p class="character-characteristics"><span>Origin:</span> Earth - c317</p>
-      <p class="character-characteristics"><span>Location:</span> Svazilend</p>
+      <p class="character-characteristics-origin">
+        <span>Origin:</span> Earth - c317
+      </p>
+      <p class="character-characteristics-location">
+        <span>Location:</span> Svazilend
+      </p>
     </li>
   </ul>
 
@@ -105,6 +108,9 @@
     "
   />
   <p>Oops! Try looking for something else...</p>
+  </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>
+
+<script src="../characters-filter.js" type="module"></script>
