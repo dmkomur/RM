@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
 
 goToButton.addEventListener('click', () => {
   if (destination === "bot") {
-    window.scrollByPages(0.9);
+    window.scrollByPages(0.1);
     
 
   } else if (destination === "top") {
