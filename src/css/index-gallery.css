@@ -1,3 +1,150 @@
-.test {
-    text-emphasis: none;
+.section-gallery {
+  border-radius: 50px;
+  background-color: #0d171d;
 }
+.gallery-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.14;
+  color: var(--color-white);
+  padding-top: 80px;
+}
+.green-word {
+  background-color: var(--color-gree);
+  border-radius: 44px;
+  display: inline-block;
+  text-align: center;
+  width: 119px;
+  height: 32px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #a1d737;
+  border-radius: 18px;
+  width: 200px;
+  height: 220px;
+}
+.swiper-wrapper {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.link-gallary {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  /* identical to box height, or 133% */
+  padding: 10px 20px;
+  text-align: center;
+  float: right;
+  border-radius: 1000px;
+
+  background-color: var(--color-gree);
+  color: var(--color-black);
+}
+.link-gallary:hover {
+  background-color: var(--color-light-green);
+  transition: background-color 250ms var(--animation-style);
+}
+@media screen and (min-width: 320px) {
+  .section-gallery {
+    /* max-width: 100%; */
+    height: 566px;
+  }
+}
+@media screen and (min-width: 375px) {
+  .section-gallery {
+    max-width: 100%;
+    height: 566px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-gallery {
+    max-width: 100%;
+    height: 747px;
+  }
+  .gallery-title {
+    font-size: 44px;
+    line-height: 1.09;
+    color: var(--color-white);
+    padding-top: 100px;
+    /* padding-right: 130px; */
+  }
+  .green-word {
+    background-color: var(--color-gree);
+    border-radius: 44px;
+    display: inline-block;
+    text-align: center;
+
+    /* font-size: 14px;
+    line-height: 1.29; */
+    width: 189px;
+    height: 56px;
+  }
+  .swiper-slide img {
+    width: 278px;
+    height: 314px;
+  }
+  .link-gallary {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    /* identical to box height, or 133% */
+    padding: 12px 24px;
+  }
+  .swiper-wrapper {
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-title {
+    display: inline-block;
+    width: 620px;
+    height: 96px;
+    font-size: 44px;
+    line-height: 1.09;
+    color: var(--color-white);
+    padding-top: 100px;
+    /* padding-right: 130px; */
+  }
+}
+
+/*
+
+.conteiner-swiper {
+ width: auto; 
+ height: 744px; 
+  background-color: #0d171d;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+ background: red; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ border: 3px solid #a1d737;
+  border-radius: 18px; 
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #a1d737;
+  border-radius: 18px;
+  width: 278px;
+  height: 314px;
+}
+.swiper-wrapper {
+  padding: 0;
+  width: auto;
+  height: auto;
+} */
