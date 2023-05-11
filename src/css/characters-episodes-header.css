@@ -233,7 +233,7 @@
     padding-bottom: 10px;
     background: var(--color-black);
     display: flex;
-    z-index: 3;
+    z-index: 1001;
     position: sticky;
     top: 0;
     left: 0;
