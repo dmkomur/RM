@@ -75,7 +75,10 @@ const galleryList = document.querySelector('.gallery');
 // selectList.addEventListener('click', createDropdownEl);
  
 const episodeFormRef = document.querySelector('.form-filter');
-const modalBackdropCharRef = document.querySelector('.backdrop')
+const modalBackdropCharRef = document.querySelector('.backdrop');
+const charactersErrorRef = document.querySelector('.characters-filter-error');
+const loadBtnCharRef = document.querySelector('.load-more-btn');
+
 
 const query = new QueryRick();
 
@@ -86,17 +89,19 @@ async function onFormInput (e) {
     const response = await query.getEpisodes();
     if (!response) {
         galleryList.innerHTML = '';
-        // charactersErrorRef.classList.remove('hidden');
-        // offLoadBtn();
+        charactersErrorRef.classList.remove('hidden');
+        offLoadBtn();
         return
     }
+    
     galleryList.addEventListener('click', onBigEpiCardClick);
-    // charactersErrorRef.classList.add('hidden');
+    charactersErrorRef.classList.add('hidden');
     query.totalPages = response.info.pages;
     query.nextPage = response.info.next;
+    console.log(query.nextPage);
     const data = response.results;
     galleryList.innerHTML = marckupEpisodes(data);
-
+    if (query.page < query.totalPages) {onLoadBtn()}
 }
 async function onBigEpiCardClick (e) {
     const currentId = e.target.closest('.episodes-filter-card-list').dataset.id;  
@@ -152,4 +157,13 @@ function onLoadBtn () {
 
 function onModalBtnCloseClick(event) {
     modalBackdropCharRef.classList.add('is-hidden')
+}
+
+async function onLoadBtnClick(event) {
+    const response = await query.getNextPage(query.nextPage);
+    query.nextPage = response.info.next;
+    const data = response.results;
+    galleryList.insertAdjacentHTML('beforeend', marckupEpisodes(data))
+    query.page++;
+    if (query.page === query.totalPages) { offLoadBtn(); return }
 }
