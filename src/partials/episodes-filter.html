@@ -89,7 +89,29 @@
         </div>
       </div>
     </form>
-    <div class="gallery"></div>
+    <div class="gallery">
+        <div class="episodes-filter-card-list list">
+            <img
+              class="episodes-filter-photo-card"
+              src="${img}" 
+              alt="" 
+              width="335px"
+              height="250px"
+            />
+          <div class="episodes-filter-info">
+            <p class="episodes-filter-info-name">
+              <span>${name}</span>
+            </p>
+            <p class="episodes-filter-info-realepisode">Season
+              <span>${realEpisode}</span></p>
+            
+            <p class="episodes-filter-info-airdate">
+              <b>Air date</b>
+              <span>${air_date}</span>
+            </p>
+          </div>
+          </div>
+    </div>
     <button type="button" class="load-more-btn episodes-filter-btn">
       Load more
     </button>
