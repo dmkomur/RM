@@ -1,6 +1,9 @@
 :root {
   --border-color: #fafafa4d;
 }
+html { 
+  scroll-behavior: smooth;
+}
 
 @media screen and (min-width: 320px) {
   .container {
@@ -19,8 +22,9 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 3;
+    z-index: 1050;
   }
+  
 
   .header-list-nav {
     display: flex;
@@ -135,6 +139,7 @@
     display: flex;
     align-items: center;
   }
+
   .big-logo-mobile {
     padding-bottom: 4px;
   }
@@ -244,13 +249,28 @@
     border-bottom-left-radius: 60px;
     padding-top: 100px;
   }
+
   .nlo-mobile {
     padding-bottom: 24px;
   }
-  .scroll {
+
+  .scroll-mobile {
     background: transparent;
     stroke: var(--color-white);
   }
+
+  .scroll-tablet {
+    background: transparent;
+    stroke: var(--color-white);
+    display: none;
+  }
+
+  .scroll-desktop {
+    background: transparent;
+    stroke: var(--color-white);
+    display: none;
+  }
+
   .scroll-btn-dunno {
     background-color: var(--color-black);
     outline: none;
@@ -260,7 +280,9 @@
     right: 20px;
     bottom: 40px;
     position: fixed;
-    z-index: 3;
+    z-index: 1050;
+    transition: all .2s ease-in;
+    scroll-behavior: smooth;
   }
 
   .nlo-tablet {
@@ -286,10 +308,12 @@
   .dis-text {
     display: none;
   }
+
   .desktop {
     display: none;
   }
 }
+
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 
 /* ///////////////////////////////////////////////////////////////////////////////////// */
@@ -300,9 +324,11 @@
     max-width: 375px;
     padding: 0 20px;
   }
+
   .flex-header {
     background-color: var(--color-black);
   }
+
   .flex1-header {
     background-color: var(--color-black);
   }
@@ -310,6 +336,7 @@
   .search-form-header {
     font-size: 12px;
   }
+
   .search-btn-icon {
     transform: translateY(55%);
   }
@@ -349,12 +376,14 @@
     display: none;
   }
 }
+
 @media screen and (min-width: 550px) {
   .hero-bg-color {
     background-size: cover;
     background-position: top;
   }
 }
+
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 
 /* ///////////////////////////////////////////////////////////////////////////////////// */
@@ -365,13 +394,16 @@
     max-width: 768px;
     padding: 0 32px;
   }
+
   .header-main-page {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+
   .flex-header {
     background-color: var(--color-black);
   }
+
   .flex1-header {
     background-color: var(--color-black);
   }
@@ -379,8 +411,25 @@
   .search-btn-icon {
     transform: translateY(77%);
   }
+
   .big-logo-mobile {
     padding-bottom: 0;
+  }
+
+  .scroll-mobile {
+    display: none;
+  }
+
+  .scroll-tablet {
+    background: transparent;
+    stroke: var(--color-white);
+    display: block;
+  }
+
+  .scroll-btn-dunno {
+    padding: 19px 20px;
+    right: 32px;
+    bottom: 64px;
   }
 
   .bg-hero-color {
@@ -526,6 +575,7 @@
     max-height: 586px;
   }
 }
+
 /* ///////////////////////////////////////////////////////////////////////////////////// */
 
 /* ///////////////////////////////////////////////////////////////////////////////////// */
@@ -537,14 +587,25 @@
     padding: 0 8px;
     max-width: 1200px;
   }
+
   .flex-header {
     background-color: var(--color-black);
   }
+
   .flex1-header {
     background-color: var(--color-black);
   }
+
   .bg-hero-color {
     max-width: 100%;
+  }
+
+  .scroll-tablet {
+    display: none;
+  }
+
+  .scroll-desktop {
+    display: block;
   }
 
   .text-hero-block {
@@ -552,6 +613,7 @@
     max-width: 311px;
     padding-top: 155px;
   }
+
   .hero-bg-color {
     padding-top: 100px;
   }
@@ -559,6 +621,7 @@
   .disno-text {
     display: none;
   }
+
   .search-btn-icon {
     transform: translateY(65%);
   }
@@ -580,40 +643,42 @@
     margin: 0;
     background-position: right 13% bottom 22%;
   }
+
   .none-dis {
     display: none;
   }
+
   .desktop {
     display: block;
   }
+
   .characters-episodes {
     font-weight: 600;
     font-size: 100px;
     line-height: 1;
     margin-bottom: 16px;
   }
+
   .text-this-ch {
     font-size: 16px;
     line-height: 1.25;
     margin-bottom: 32px;
     width: 482px;
   }
+
   .rick-mob {
     margin-right: 0;
   }
+
   .characters-hero-img {
     padding-bottom: 126px;
     background-image: url(../img/hero-header-img/blocks-desktop.webp);
     background-position: right -20% top -20%;
   }
+
   .container-hero-block {
     padding-top: 54px;
     padding-bottom: 87px;
   }
-  .scroll {
-    position: relative;
-    right: 0%;
-    bottom: 0%;
-    transform: translateY(58%);
-  }
+
 }
