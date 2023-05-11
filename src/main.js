@@ -33,12 +33,12 @@ async function onIndexSearchSubmit(event) {
     indexSearchSectionRef.classList.remove('visually-hidden')
      }
       
-async function onBigCharCardClick(event) {    
+async function onBigCharCardClick(event) {   
+        if (event.currentTarget === event.target) return
     const currentId = event.target.closest('.character-card').dataset.id;  
     await onCharCardClick(currentId);
     modalBackdropCharRef.classList.remove('is-hidden');
-    const bre = document.querySelector('.character-episodes-list');
-    new SimpleBar(bre);
+   
     const modalBtnCloseRef = document.querySelector('.modal-button')
     const modalCharListRef = document.querySelector('.little-wrap')
         modalBackdropCharRef.classList.remove('is-hidden');
@@ -46,10 +46,12 @@ async function onBigCharCardClick(event) {
     // indexSearchRef.removeEventListener('click', onBigCharCardClick);
     modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
     modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
+        document.body.style.overflow = 'hidden';
+
 }
 
 async function onSmallEpiCardClick(event) {
- 
+     if (event.currentTarget === event.target) return
     const currentId = event.target.closest('.character-episodes-item').dataset.id;  
     await onEpiCardClick(currentId);
     const modalBtnCloseRef = document.querySelector('.episodes-popup-btn-close');
@@ -65,7 +67,8 @@ async function onEpiCardClick(currentId) {
        }
 
 async function onSmallCharCardClick(event) {
- 
+     if (event.currentTarget === event.target) return
+
     const currentId = event.target.closest('.episodes-popup-charlist-item').dataset.id;  
     await onCharCardClick(currentId);
     const modalBtnCloseRef = document.querySelector('.modal-button');
@@ -79,5 +82,7 @@ async function onCharCardClick(currentId) {
      modalBackdropCharRef.innerHTML = markupToPaste;
        }
 function onModalBtnCloseClick(event) {
-    modalBackdropCharRef.classList.add('is-hidden')
+    modalBackdropCharRef.classList.add('is-hidden');
+        document.body.style.overflow = 'auto';
+
 }

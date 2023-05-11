@@ -1,4 +1,6 @@
 import { QueryRick } from "./fetcher"
+import 'simplebar';
+import 'simplebar/dist/simplebar.css';
 const query = new QueryRick;
 
 export function markupCharacters(data) {
@@ -124,13 +126,15 @@ export async function marckupEpi(data) {
         </div>
       </div>
       <h3 class="episode-popup-header">Characters</h3>
-      <ul class="episodes-popup-charlist">
-       ${stringOfCharacters}
+      <ul class="episodes-popup-charlist" data-simplebar >
+       <div class="wrap-for-charlist">
+           ${stringOfCharacters}
+        </div>
       </ul>
     </div>
   </div>`
 }
-
+ 
 export function marckupEpisodes (data) {
       const markup = data
       .map(({url, name, episode, air_date, id}) => {
