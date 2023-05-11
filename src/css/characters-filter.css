@@ -1,5 +1,7 @@
 @media screen and (min-width: 320px) {
+
   /* Select menu */
+
 
   .select-container-status > .fsb-select,
   .select-container-type > .fsb-select {
@@ -11,12 +13,12 @@
     line-height: 1.29;
   }
 
-  .select-container-status > .fsb-select {
+  .select-container-status>.fsb-select {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .select-container-species > .fsb-select,
-  .select-container-gender > .fsb-select {
+  .select-container-species>.fsb-select,
+  .select-container-gender>.fsb-select {
     width: 132px;
     height: 46px;
 
@@ -42,7 +44,7 @@
     width: 132px;
   }
 
-  .fsb-list > .fsb-option > span {
+  .fsb-list>.fsb-option>span {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -244,11 +246,12 @@
 }
 
 @media screen and (min-width: 375px) {
+
   /* Select menu */
-  .select-container-status > .fsb-select,
-  .select-container-type > .fsb-select,
-  .select-container-species > .fsb-select,
-  .select-container-gender > .fsb-select {
+  .select-container-status>.fsb-select,
+  .select-container-type>.fsb-select,
+  .select-container-species>.fsb-select,
+  .select-container-gender>.fsb-select {
     width: 160px;
   }
 
@@ -277,9 +280,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
   /* Select menu */
-  .select-container-status > .fsb-select,
-  .select-container-type > .fsb-select {
+  .select-container-status>.fsb-select,
+  .select-container-type>.fsb-select {
     height: 50px;
     margin-right: 16px;
 
@@ -287,12 +291,13 @@
     line-height: 1.12;
   }
 
-  .select-container-status > .fsb-select {
+  .select-container-status>.fsb-select {
     width: 202px;
 
     font-size: 16px;
     line-height: 1.12;
   }
+
 
   .select-container-status > .fsb-option {
     width: 202px;
@@ -306,6 +311,7 @@
     line-height: 1.12;
   }
 
+
   .select-container-species > .fsb-option {
     width: 192px;
   }
@@ -314,7 +320,7 @@
     width: 175px;
   }
 
-  .select-container-species > .fsb-option {
+  .select-container-type > .fsb-option {
     width: 175px;
   }
 
@@ -415,8 +421,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+
   /* Select menu */
-  .select-container-status > .fsb-select {
+  .select-container-status>.fsb-select {
     width: 165px;
   }
 
