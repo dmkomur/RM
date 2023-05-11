@@ -41,27 +41,31 @@ function createGalleryMarkup(data) {
         const realImg = {1:'./img/episodes-filter/season-1.png', 2:'./img/episodes-filter/season-2.png', 3:'./img/episodes-filter/season-3.png', 4:'./img/episodes-filter/season-4.png', 5:'./img/episodes-filter/season-5.png', 6:'./img/episodes-filter/season-6.png'};
         const img = realImg[realEpisode];
       return (`
-      <div class="episodes-filter-card-list list">
-      <img
-        class="episodes-filter-photo-card"
-        src="${img}" 
-        alt="" 
-        width="335px"
-        height="250px"
-      />
-    <div class="episodes-filter-info">
-      <p class="episodes-filter-info-name">
-        <span>${name}</span>
-      </p>
-      <p class="episodes-filter-info-realepisode">Season
-        <span>${realEpisode}</span></p>
-      
-      <p class="episodes-filter-info-airdate">
-        <b>Air date</b>
-        <span>${air_date}</span>
-      </p>
+
+    <div class="episodes-filter-card-list list">
+    <img
+      class="episodes-filter-photo-card"
+      src="${img}" 
+      alt="" 
+      width="335px"
+      height="250px"
+    />
+  <div class="episodes-filter-info">
+    <p class="episodes-filter-info-name">
+      <span>${name}</span>
+    </p>
+    <div class="episodes-filter-info-serias">
+      <div class="episodes-filter-info-realepisode">
+    <p class=" episodes-filter-info-title">Season</p>
+    <span class=" episodes-filter-info-pretitle">${realEpisode}</span>
+  </div>
+  <div class="episodes-filter-info-airdate">
+    <p class=" episodes-filter-info-title">Air date</p>
+    <span class=" episodes-filter-info-pretitle">${air_date}</span>
+  </div>
     </div>
-    </div>
+  </div>
+  </div>
       `)
   })
   .join(''); 

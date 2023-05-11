@@ -90,7 +90,7 @@
       </div>
     </form>
     <div class="gallery">
-        <div class="episodes-filter-card-list list">
+        <!-- <div class="episodes-filter-card-list list">
             <img
               class="episodes-filter-photo-card"
               src="${img}" 
@@ -102,15 +102,18 @@
             <p class="episodes-filter-info-name">
               <span>${name}</span>
             </p>
-            <p class="episodes-filter-info-realepisode">Season
-              <span>${realEpisode}</span></p>
-            
-            <p class="episodes-filter-info-airdate">
-              <b>Air date</b>
-              <span>${air_date}</span>
-            </p>
+            <div class="episodes-filter-info-serias">
+              <div class="episodes-filter-info-realepisode">
+            <p class=" episodes-filter-info-title">Season</p>
+            <span class=" episodes-filter-info-pretitle">${realEpisode}</span>
           </div>
+          <div class="episodes-filter-info-airdate">
+            <p class=" episodes-filter-info-title">Air date</p>
+            <span class=" episodes-filter-info-pretitle">${air_date}</span>
           </div>
+            </div>
+          </div>
+          </div> -->
     </div>
     <button type="button" class="load-more-btn episodes-filter-btn">
       Load more
@@ -119,3 +122,25 @@
 </section>
 <script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>
 <script type="module" src="../episodes-filter.js"></script>
+
+<!-- //   <div class="episodes-filter-card-list list">
+  //   <img
+  //     class="episodes-filter-photo-card"
+  //     src="${img}" 
+  //     alt="" 
+  //     width="335px"
+  //     height="250px"
+  //   />
+  // <div class="episodes-filter-info">
+  //   <p class="episodes-filter-info-name">
+  //     <span>${name}</span>
+  //   </p>
+  //   <p class="episodes-filter-info-realepisode">Season
+  //     <span>${realEpisode}</span></p>
+    
+  //   <p class="episodes-filter-info-airdate">
+  //     <b>Air date</b>
+  //     <span>${air_date}</span>
+  //   </p>
+  // </div>
+  // </div> -->
