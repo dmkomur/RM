@@ -14,59 +14,65 @@
     />
 
     
-    <link rel="stylesheet" href="/RM/assets/styles-11319c7b.css">
+    
+    
+    <script type="module" crossorigin src="/RM/assets/episodes-5c2feb46.js"></script>
+    <link rel="modulepreload" crossorigin href="/RM/assets/marckup-901b306a.js">
+    <link rel="stylesheet" href="/RM/assets/marckup-4086f9cb.css">
+    <link rel="stylesheet" href="/RM/assets/episodes-e48ddc67.css">
+    <link rel="stylesheet" href="/RM/assets/styles-e13d16c2.css">
   </head>
   <body>
-    <header class="header-characters" id="myHeader">
-  <div class="container flex1" >
-    <div class="logo-page">
-      <a class="mini-logo dis-none" href="./index.html"><img src="../img/hero-header-img/mini-logo-mob.webp" alt="rm"></a>
-    <a class="mini-logo none-dis desktop" href="./index.html"><img src="../img/hero-header-img/logo-mini-tablet.webp" alt="rm"></a>
-
-
+    <header class="header-characters-episods">
+  <div class="container flex1-header">
+    <div class="logo-page-head">
+      <a class="mini-logo-head dis-none" href="./index.html"
+        ><img src="../img/hero-header-img/mini-logo-mob.webp" alt="rm"
+      /></a>
+      <a class="mini-logo-head none-dis desktop" href="./index.html"
+        ><img src="../img/hero-header-img/logo-mini-tablet.webp" alt="rm"
+      /></a>
     </div>
-    <form class="search-block">
-      <span class="loop">
-        <input
-          class="search-form"
-          id="search-submit"
-          type="search-name"
-          placeholder="Search"
-        />
-        <button type="submit" class="modal-icon dis-none">
-          <svg class="svg-img" width="16" height="16">
-            <use xlink:href="../img/symbol.svg#icon-search"></use>
-          </svg>
-        </button>
-        <button type="submit" class="modal-icon none-dis desktop">
-          <svg class="svg-img" width="18" height="18">
-            <use xlink:href="../img/symbol.svg#icon-search"></use>
-          </svg>
-        </button>
-      </span>
-    </form>
+    <a class="header-nav-characters link font-size-page" href="./characters.html"
+            >Characters</a
+          >
   </div>
 </header>
 
-  <div class="hero-bg">
-    <section class="container">
-      <div class="characters-hero">
-        <div class="hero-flex">
-          <h1 class="characters">Episodes</h1>
-          <h4 class="text-this-ch">
-            With a comprehensive guide to every episode, you can relive your favorite moments and discover new ones. From the bizarre and hilarious to the emotional and thought-provoking, our episode guide covers it all. 
-          </h4>
-          <a class="go-back link" href="./index.html">Back home</a>
-        </div>
-        <img class="rick-mob dis-none" src="../img/hero-header-img/episod-foto.webp" alt="rick">
-        <img class="rick-mob none-dis" src="../img/hero-header-img/episodes-tablet.webp" alt="rick">
-        <img class="rick-mob desktop" src="../img/hero-header-img/episodes-desktop.webp" alt="rick">
+<section class="hero-bg-color">
+  <div class="container">
+    <div class="characters-hero-img">
+      <div class="hero-flex-text">
+        <h1 class="characters-episodes">Episodes</h1>
+        <h4 class="text-this-ch">
+          With a comprehensive guide to every episode, you can relive your
+          favorite moments and discover new ones. From the bizarre and hilarious
+          to the emotional and thought-provoking, our episode guide covers it
+          all.
+        </h4>
+        <a class="go-back-home link" href="./index.html">Back home</a>
       </div>
-    </section>
+      <img
+        class="rick-mob dis-none"
+        src="../img/hero-header-img/episod-foto.webp"
+        alt="rick"
+      />
+      <img
+        class="rick-mob none-dis"
+        src="../img/hero-header-img/episodes-tablet.webp"
+        alt="rick"
+      />
+      <img
+        class="rick-mob desktop"
+        src="../img/hero-header-img/episodes-desktop.webp"
+        alt="rick"
+      />
+    </div>
   </div>
+</section>
 
     <main>
-      <div class="divider">
+      <div class="divider" id="divider">
   <p class="divider-text divider-Amazing">Amazing!</p>
   <div class="divider-block">
     <p class="divider-text divider-the_adventures">the adventures</p>
@@ -83,61 +89,127 @@
   </div>
 </div>
 
-      
+      <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.css"
+/>
+
 <section class="episodes-filter">
-    <div class="container">
+  <div class="container">
     <h2 class="hidden">Episodes filter</h2>
     <form action="" class="form-filter">
-        <div class="episodes-filter-input-field">
-        <label class="episodes-filter-text" for="episodes-filter-user-name">Name</label>
+      <div class="episodes-filter-input-field">
+        <label class="episodes-filter-text" for="episodes-filter-user-name"
+          >Name</label
+        >
         <div class="episodes-filter-input-wrap">
-        <input 
+          <input
             class="episodes-filter-input"
-            id="episodes-filter-user-name" 
-            type="text" 
-            name="episodes-filter-user-name" 
+            id="episodes-filter-user-name"
+            type="text"
+            name="episodeName"
             placeholder="Enter name"
-            />
-            <svg class="episodes-filter-input-icon"  width="12px" height="12px">
-                <use href="../img/symbol.svg#icon-search"></use>
-            </svg>
+          />
+          <svg class="episodes-filter-input-icon" width="16px" height="16px">
+            <use href="../img/symbol.svg#icon-search"></use>
+          </svg>
         </div>
-        </div>
-        <div>
+      </div>
+      <div class="episodes-filter-selectwithlabel">
         <label for="episode" class="episodes-filter-text"> Episode code </label>
         <div class="episodes-filter-select-field">
-            <select  name="season" id="episode" class="episodes-filter-select dropdown-toggle">
-                <div class="episodes-filter-select-wrap dropdown-menu">
-                    <option class="dropdown-item" value="s1">All series</option>
-                    <optgroup class="dropdown-menu-item" label="1 season">
-                      <option class="dropdown-item" value="1">1 series</option>
-                    </optgroup>
-                    <optgroup label="2 season">
-                        <option value="1">1 series</option>
-                      </optgroup>
-                </div>
-            </select>
-        <svg class="episodes-filter-select-icon"  width="9px" height="4.5px">
-            <use href="../img/symbol.svg#icon-jackdaw"></use>
-        </svg>
-    </div>
-    </div>
+          <select name="episode">
+            <option value="">All Season</option>
+            <option value="s01">1 Season</option>
+            <option value="s01e01">ㅤ1 series</option>
+            <option value="s01e02">ㅤ2 series</option>
+            <option value="s01e03">ㅤ3 series</option>
+            <option value="s01e04">ㅤ4 series</option>
+            <option value="s01e05">ㅤ5 series</option>
+            <option value="s01e06">ㅤ6 series</option>
+            <option value="s01e07">ㅤ7 series</option>
+            <option value="s01e08">ㅤ8 series</option>
+            <option value="s01e09">ㅤ9 series</option>
+            <option value="s01e010">ㅤ10 series</option>
+            <option value="s01e011">ㅤ11 series</option>
+            <option value="s02">2 Season</option>
+            <option value="s02e01">ㅤ1 series</option>
+            <option value="s02e02">ㅤ2 series</option>
+            <option value="s02e03">ㅤ3 series</option>
+            <option value="s02e07">ㅤ4 series</option>
+            <option value="s02e05">ㅤ5 series</option>
+            <option value="s02e06">ㅤ6 series</option>
+            <option value="s02e07">ㅤ7 series</option>
+            <option value="s02e08">ㅤ8 series</option>
+            <option value="s02e09">ㅤ9 series</option>
+            <option value="s02e010">ㅤ10 series</option>
+            <option value="s03">3 Season</option>
+            <option value="s03e01">ㅤ1 series</option>
+            <option value="s03e02">ㅤ2 series</option>
+            <option value="s03e03">ㅤ3 series</option>
+            <option value="s03e04">ㅤ4 series</option>
+            <option value="s03e05">ㅤ5 series</option>
+            <option value="s03e06">ㅤ6 series</option>
+            <option value="s03e07">ㅤ7 series</option>
+            <option value="s03e08">ㅤ8 series</option>
+            <option value="s03e09">ㅤ9 series</option>
+            <option value="s03e010">ㅤ10 series</option>
+            <option value="s04">4 Season</option>
+            <option value="s04e01">ㅤ1 series</option>
+            <option value="s04e02">ㅤ2 series</option>
+            <option value="s04e03">ㅤ3 series</option>
+            <option value="s04e04">ㅤ4 series</option>
+            <option value="s04e05">ㅤ5 series</option>
+            <option value="s04e06">ㅤ6 series</option>
+            <option value="s04e07">ㅤ7 series</option>
+            <option value="s04e08">ㅤ8 series</option>
+            <option value="s04e09">ㅤ9 series</option>
+            <option value="s04e010">ㅤ10 series</option>
+            <option value="s05">5 Season</option>
+            <option value="s05e01">ㅤ1 series</option>
+            <option value="s05e02">ㅤ2 series</option>
+            <option value="s05e03">ㅤ3 series</option>
+            <option value="s05e04">ㅤ4 series</option>
+            <option value="s05e05">ㅤ5 series</option>
+            <option value="s05e06">ㅤ6 series</option>
+            <option value="s05e07">ㅤ7 series</option>
+            <option value="s05e08">ㅤ8 series</option>
+            <option value="s05e09">ㅤ9 series</option>
+            <option value="s05e010">ㅤ10 series</option>
+          </select>
+        </div>
+      </div>
     </form>
-    <div>
-        <img src="" alt="">
-        <p></p>
-        <p>Season<span></span></p>
-        <p>Air date<span></span></p>
-    </div>
-    <button type="button" class="load-more">Load more</button>
-    </div>
+    <div class="gallery"></div>
+
+    <button type="button" class="load-more-btn visually-hidden">Load more</button>
+</div>
 </section>
+
+<!-- Error -->
+<div class="characters-filter-error hidden">
+<img
+  src="../img/character-filter/error-filter-mobile-1x.png"
+  alt="Error. You need to change your search terms"
+  srcset="
+    ../img/character-filter/error-filter-mobile-1x.png 1x,
+    ../img/character-filter/error-filter-mobile-2x.png 2x
+  "
+/>
+<p>Oops! Try looking for something else...</p>
+</div>
+
+  </div>
+</section>
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>
+
+
     </main>
     <footer class="footer-main-characters" id="footer">
   <div class="container">
     <div class="footer-components">
       <div class="footer-logo">
-        <a href="/src/index.html">
+        <a href="../index.html">
           <picture>
             <source
               srcset="../img/footer/footer-img-320.png"
@@ -161,12 +233,12 @@
         <div class="footer-pages">
           <ul class="footer-list-characters">
             <li>
-              <a href="/src/characters.html" class="footer-characters-item"
+              <a href="../characters.html" class="footer-characters-item"
                 >Characters</a
               >
             </li>
             <li>
-              <a href="/src/episodes.html" class="footer-characters-item"
+              <a href="../episodes.html" class="footer-characters-item"
                 >Episodes</a
               >
             </li>
@@ -175,21 +247,30 @@
         <div class="footer-social-media">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a href="#" class="footer-social-list-link-characters">
+              <a
+                href="../error.html"
+                class="footer-social-list-link-characters"
+              >
                 <svg class="footer-social-icon-characters">
                   <use href="../img/symbol.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="#" class="footer-social-list-link-characters">
+              <a
+                href="../error.html"
+                class="footer-social-list-link-characters"
+              >
                 <svg class="footer-social-icon-characters">
                   <use href="../img/symbol.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="#" class="footer-social-list-link-characters">
+              <a
+                href="../error.html"
+                class="footer-social-list-link-characters"
+              >
                 <svg class="footer-social-icon-characters">
                   <use href="../img/symbol.svg#icon-instagram"></use>
                 </svg>
@@ -205,51 +286,156 @@
   </div>
 </footer>
 
-    <div class="backdrop is-hidden">
-  <div class="episode-popup">
-    <button class="episodes-popup-btn-close" type="button">
-      <svg class="episodes-popup-btn-close-icon" width="20" height="20">
+    <div class="backdrop is-hidden" data-character-modal>
+  <div class="modal">
+    <button type="button" class="modal-button" data-character-modal-close>
+      <svg class="modal-soc-icon" width="10px" height="10px">
         <use href="../img/symbol.svg#icon-close"></use>
       </svg>
     </button>
-    <div class="episode-popup-card">
-      <h3 class="episode-popup-header">Pilot</h3>
-      <div class="episode-popup-info">
-        <div>
-          <p class="episode-popup-info-header">ID</p>
-          <p class="episode-popup-info-text">000</p>
-        </div>
-        <div>
-          <p class="episode-popup-info-header">Air date</p>
-          <p class="episode-popup-info-text">December 2, 2013</p>
-        </div>
+    <div>
+      <div class="modal-img-wrap">
+        <img src="" alt="Computer image" class="modal-img" />
       </div>
-      <h3 class="episode-popup-header">Characters</h3>
-      <ul class="episodes-popup-charlist">
-        <li class="episodes-popup-charlist-item">
-          <div class="episodes-popup-image-thumb">
-            <img src="../img/episodes-popup/popup-img.jpg" alt="Rick" />
-          </div>
-          <p class="episodes-popup-charlist-text">Rick</p>
+      <ul class="character-characteristics-list">
+        <li class="character-characteristics-item">
+          <p class="title-characteristic">Status</p>
+          <p class="text-characteristic">asdasdasdasda</p>
         </li>
-        <li class="episodes-popup-charlist-item">
-          <div class="episodes-popup-image-thumb">
-            <img src="../img/episodes-popup/popup-img.jpg" alt="Rick" />
-          </div>
-          <p class="episodes-popup-charlist-text">Rick</p>
+        <li class="character-characteristics-item">
+          <p class="title-characteristic">Species</p>
+          <p class="text-characteristic">Staasdasdasdt</p>
         </li>
-        <li class="episodes-popup-charlist-item">
-          <div class="episodes-popup-image-thumb">
-            <img src="../img/episodes-popup/popup-img.jpg" alt="Rick" />
-          </div>
-          <p class="episodes-popup-charlist-text">Rick</p>
+        <li class="character-characteristics-item">
+          <p class="title-characteristic">Gender</p>
+          <p class="text-characteristic">Staasdasdadadtu</p>
         </li>
-        <li class="episodes-popup-charlist-item">
-          <div class="episodes-popup-image-thumb">
-            <img src="../img/episodes-popup/popup-img.jpg" alt="Rick" />
-          </div>
-          <p class="episodes-popup-charlist-text">Rick</p>
+        <li class="character-characteristics-item">
+          <p class="title-characteristic">Origin</p>
+          <p class="text-characteristic">Staasdasdasdstus</p>
         </li>
+        <li class="character-characteristics-item">
+          <p class="title-characteristic">Location</p>
+          <p class="text-characteristic">Staadasdasasdastus</p>
+        </li>
+        <li class="character-characteristics-item">
+          <p class="title-characteristic">Type</p>
+          <p class="text-characteristic">Stadasdadasdadastus</p>
+        </li>
+      </ul>
+    </div>
+    <div class="character-episodes-contsiner">
+      <h2 class="character-episodes-title">Episodes</h2>
+      <ul data-simplebar class="character-episodes-list">
+        <div class="little-wrap">
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilotdfgdfgfdf</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">May 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <p class="character-episodes-item-title">Pilotasdasdasdasda</p>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">
+                    December 2asdasda, 2013
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </div>
       </ul>
     </div>
   </div>

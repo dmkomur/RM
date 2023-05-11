@@ -13,43 +13,47 @@
     />
 
     <title>Rick&Morty</title>
+    
 
     
-    <script type="module" crossorigin src="/RM/assets/index-9040814b.js"></script>
-    <link rel="stylesheet" href="/RM/assets/styles-11319c7b.css">
+    <script type="module" crossorigin src="/RM/assets/index-1cc37600.js"></script>
+    <link rel="modulepreload" crossorigin href="/RM/assets/marckup-901b306a.js">
+    <link rel="stylesheet" href="/RM/assets/marckup-4086f9cb.css">
+    <link rel="stylesheet" href="/RM/assets/index-4aa43f54.css">
+    <link rel="stylesheet" href="/RM/assets/styles-e13d16c2.css">
   </head>
   <body>
-    <header class="header ">
-  <div class="container flex">
-    <div class="container-header">
-      <ul class="header-list">
-        <li class="header-nav nav-characters">
+    <header class="header-main-page" id="header-main-page">
+  <div class="container flex-header">
+    <div class="container-header-block">
+      <ul class="header-list-nav">
+        <li class="nav-characters-item">
           <a class="header-nav-characters link" href="./characters.html"
             >Characters</a
           >
         </li>
-        <li class="header-nav nav-episodes">
+        <li class="nav-episodes-item">
           <a class="header-nav-episodes link" href="./episodes.html"
             >Episodes</a
           >
         </li>
       </ul>
     </div>
-    <form class="search-block">
-      <span class="loop">
+    <form class="search-block-header">
+      <span class="loop-search-flip">
         <input
-          class="search-form"
-          id="search-submit"
+          class="search-form-header"
+          id="search-submit-header"
           type="search-name"
           placeholder="Search"
         />
-        <button type="submit" class="modal-icon dis-none">
-          <svg class="svg-img" width="16" height="16">
+        <button  type="submit" class="search-btn-icon dis-none">
+          <svg class="svg-img-btn-head" width="16" height="16">
             <use xlink:href="../img/symbol.svg#icon-search"></use>
           </svg>
         </button>
-        <button type="submit" class="modal-icon none-dis desktop">
-          <svg class="svg-img" width="18" height="18">
+        <button type="submit" class="search-btn-icon none-dis desktop">
+          <svg class="svg-img-btn-head" width="18" height="18">
             <use xlink:href="../img/symbol.svg#icon-search"></use>
           </svg>
         </button>
@@ -58,53 +62,66 @@
   </div>
 </header>
 
-
-  <section class=" bg-hero">
-    <div class="container-hero display">
-      <p class="text-hero dis-text">
-        If you're a fan of Rick and Morty, you don't want to miss out on our
-        app! Start exploring the endless possibilities of Rick and Morty!
-      </p>
-      <div class="bg-color">
-        <img
-          class="nlo-mobile"
-          src="../img/hero-header-img/nlo-mob.webp"
-          alt="nlo-rick-morty"
-        />
-        <img
-          class="big-logo-mobile"
-          src="../img/hero-header-img/big-logo-mob.webp"
-          alt="nlo-rick-morty"
-        />
-        <img
-          class="nlo-tablet"
-          src="../img/hero-header-img/RM-nlo-tablet.webp"
-          alt="nlo-rick-morty"
-        />
-        <img
-          class="big-logo-tablet"
-          src="../img/hero-header-img/logo-tablet.webp"
-          alt="nlo-rick-morty"
-        />
-      </div>
-      <p class="text-hero disno-text">
-        If you're a fan of Rick and Morty, you don't want to miss out on our
-        app! Start exploring the endless possibilities of Rick and Morty!
-      </p>
-      <button class="scroll-btn" type="button">
-        <svg class="scroll" width="20px" height="20px">
-          <use href="../img/symbol.svg#icon-arrow"></use>
-        </svg>
-      </button>
+<section class="bg-hero-color">
+  <div class="container-hero-block display">
+    <p class="text-hero-block dis-text">
+      If you're a fan of Rick and Morty, you don't want to miss out on our app!
+      Start exploring the endless possibilities of Rick and Morty!
+    </p>
+    <div class="bg-color-hero">
+      <img
+        class="nlo-mobile"
+        src="../img/hero-header-img/nlo-mob.webp"
+        alt="nlo-rick-morty"
+      />
+      <img
+        class="big-logo-mobile"
+        src="../img/hero-header-img/big-logo-mob.webp"
+        alt="nlo-rick-morty"
+      />
+      <img
+        class="nlo-tablet"
+        src="../img/hero-header-img/RM-nlo-tablet.webp"
+        alt="nlo-rick-morty"
+      />
+      <img
+        class="big-logo-tablet"
+        src="../img/hero-header-img/logo-tablet.webp"
+        alt="nlo-rick-morty"
+      />
     </div>
-    
-  </section>
+    <p class="text-hero-block disno-text">
+      If you're a fan of Rick and Morty, you don't want to miss out on our app!
+      Start exploring the endless possibilities of Rick and Morty!
+    </p>
+    <button
+      class="scroll-btn-dunno up-down-btn"
+      type="button"
+      id="myBtn"
+      onClick="document.getElementById('divider').scrollIntoView(); "
+    >
+      <svg class="scroll-mobile" width="20px" height="20px">
+        <use href="../img/symbol.svg#icon-arrow"></use>
+      </svg>
+      <svg class="scroll-tablet" width="32px" height="32px">
+        <use href="../img/symbol.svg#icon-arrow"></use>
+      </svg>
+      <svg class="scroll-desktop" width="40px" height="40px">
+        <use href="../img/symbol.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</section>
 
-  
+
+<script src="./header-hero.js"></script>
+
+
+
     
 
     <main>
-      <div class="divider">
+      <div class="divider" id="divider">
   <p class="divider-text divider-Amazing">Amazing!</p>
   <div class="divider-block">
     <p class="divider-text divider-the_adventures">the adventures</p>
@@ -121,10 +138,134 @@
   </div>
 </div>
 
-      <p>index-search</p>
+      <section class="characters-filter visually-hidden" id="index-search">
+  <div class="container">
+    <ul class="characters-gallery" data-index-search></ul>
+  </div>
+</section>
 
-      <p>index-maincharacters</p>
-      <p>index-gallery</p>
+      <section class="main-char__section section">
+  <div class="container">
+    <h2 class="main-char__section__title">
+      <span class="main-char__section__title--main">Main</span>characters
+    </h2>
+    <div class="main-char__section__char--images-and-info swiper">
+      <div class="swiper-wrapper">
+        <div class="main-char__section__char-image-box swiper-slide">
+          <img
+            class="main-char__section__img"
+            srcset="/RM/assets/rick-mobile-489b4bb2.jpg 335w, /RM/assets/rick-mobile@2x-d46ea753.jpg 670w, /RM/assets/rick-tablet-81631c30.jpg 704w, /RM/assets/rick-tablet@2x-fd886d29.jpg 1408w, /RM/assets/rick-desktop-1acb0afc.jpg 504w, /RM/assets/rick-desktop@2x-18427869.jpg 1008w"
+            sizes="(min-width: 1200px) 504px, (min-width: 768px) 704px, (min-width: 320px) 335px, 100vw"
+            src="/RM/assets/rick-mobile-489b4bb2.jpg"
+            alt="Rick Sanchez"
+            loading="lazy"
+          />
+        </div>
+        <div class="main-char__section__char-image-box swiper-slide">
+          <img
+            class="main-char__section__img"
+            srcset="/RM/assets/morty-mobile-75e69fc1.jpg 335w, /RM/assets/morty-mobile@2x-a6fb652e.jpg 670w, /RM/assets/morty-tablet-425c6e00.jpg 704w, /RM/assets/morty-tablet@2x-46d166a1.jpg 1408w, /RM/assets/morty-desktop-35f5b34e.jpg 504w, /RM/assets/morty-desktop@2x-c9c81d21.jpg 1008w"
+            sizes="(min-width: 1200px) 504px, (min-width: 768px) 704px, (min-width: 320px) 335px, 100vw"
+            src="/RM/assets/morty-mobile-75e69fc1.jpg"
+            alt="Morty Smith"
+            loading="lazy"
+          />
+        </div>
+        <div class="main-char__section__char-image-box swiper-slide">
+          <img
+            class="main-char__section__img"
+            srcset="/RM/assets/summer-mobile-96ef785e.jpg 335w, /RM/assets/summer-mobile@2x-645b9560.jpg 670w, /RM/assets/summer-tablet-82082523.jpg 704w, /RM/assets/summer-tablet@2x-23e5b7a4.jpg 1408w, /RM/assets/summer-desktop-771c129d.jpg 504w, /RM/assets/summer-desktop@2x-e96dc2d1.jpg 1008w"
+            sizes="(min-width: 1200px) 504px, (min-width: 768px) 704px, (min-width: 320px) 335px, 100vw"
+            src="/RM/assets/summer-mobile-96ef785e.jpg"
+            alt="Summer Smith"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div class="main-char__section__list swiper-pagination">
+        <div class="main-char__section__item item">
+          <h3 class="is-active main-char__section__item--title">
+            Rick Sanchez
+          </h3>
+          <p class="main-char__section__item--description">
+            Rick Sanchez is a brilliant but deeply troubled scientist and one of
+            the main characters in the animated TV show Rick and Morty. He often
+            acts selfishly and impulsively, using his scientific knowledge and
+            gadgets to manipulate those around him.
+          </p>
+        </div>
+        <div class="main-char__section__item item">
+          <h3 class="main-char__section__item--title">Morty Smith</h3>
+          <p class="main-char__section__item--description">
+            Morty Smith is the other main character in the animated TV show Rick
+            and Morty, and Rick's grandson. He is a timid and anxious teenager
+            who is often reluctant to accompany Rick on his wild adventures, but
+            is forced to do so anyway. Despite his fears, Morty is often able to
+            show surprising courage and resourcefulness, and is a loyal and
+            loving grandson to Rick.
+          </p>
+        </div>
+        <div class="main-char__section__item item">
+          <h3 class="main-char__section__item--title">Summer Smith</h3>
+          <p class="main-char__section__item--description">
+            Summer Smith is Morty's older sister and one of the main characters
+            in Rick and Morty. Initially portrayed as a typical teenager, she
+            develops into a more complex and independent character, who is
+            intelligent, resourceful, and fiercely loyal to her family.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <section class="section-gallery" id="gallery">
+  <div class="container conteiner-swiper">
+    <h2 class="gallery-title">
+      Ready to <span class="green-word">explore</span> the crazy world of Rick
+      and Morty?
+    </h2>
+
+    <div class="swiper mySwiper">
+      <ul class="section-gallery__list swiper-wrapper">
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-1.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-6.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-3.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-7.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-5.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-2.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-4.jpg" alt="photo chocolate" />
+        </li>
+
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-9.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-10.jpg" alt="photo chocolate" />
+        </li>
+        <li class="swiper-slide">
+          <img src="../img/gallery/image-11.jpg" alt="photo chocolate" />
+        </li>
+      </ul>
+      <a href="./episodes.html" class="link-gallary">Episodes</a>
+    </div>
+  </div>
+</section>
+
 
     </main>
     <footer class="footer-main" id="footer">
@@ -149,12 +290,12 @@
         <div class="footer-pages">
           <ul class="footer-list">
             <li>
-              <a href="/src/characters.html" class="footer-characters-item"
+              <a href="../characters.html" class="footer-characters-item"
                 >Characters</a
               >
             </li>
             <li>
-              <a href="/src/episodes.html" class="footer-characters-item"
+              <a href="../episodes.html" class="footer-characters-item"
                 >Episodes</a
               >
             </li>
@@ -163,21 +304,21 @@
         <div class="footer-social-media">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a href="#" class="footer-social-list-link">
+              <a href="../error.html" class="footer-social-list-link">
                 <svg class="footer-social-icon">
                   <use href="../img/symbol.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="#" class="footer-social-list-link">
+              <a href="../error.html" class="footer-social-list-link">
                 <svg class="footer-social-icon">
                   <use href="../img/symbol.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-item">
-              <a href="#" class="footer-social-list-link">
+              <a href="../error.html" class="footer-social-list-link">
                 <svg class="footer-social-icon">
                   <use href="../img/symbol.svg#icon-instagram"></use>
                 </svg>
@@ -197,116 +338,152 @@
   <div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href=""></use>
+        <use href="../img/symbol.svg#icon-close"></use>
       </svg>
     </button>
     <div>
-      <img src="../img/image-1.jpg" alt="Computer image" class="modal-img" />
+      <div class="modal-img-wrap">
+        <img src="" alt="Computer image" class="modal-img" />
+      </div>
       <ul class="character-characteristics-list">
         <li class="character-characteristics-item">
           <p class="title-characteristic">Status</p>
-          <p class="text-characteristic">Stas</p>
+          <p class="text-characteristic">asdasdasdasda</p>
         </li>
         <li class="character-characteristics-item">
           <p class="title-characteristic">Species</p>
-          <p class="text-characteristic">Stat</p>
+          <p class="text-characteristic">Staasdasdasdt</p>
         </li>
         <li class="character-characteristics-item">
           <p class="title-characteristic">Gender</p>
-          <p class="text-characteristic">Statu</p>
+          <p class="text-characteristic">Staasdasdadadtu</p>
         </li>
         <li class="character-characteristics-item">
           <p class="title-characteristic">Origin</p>
-          <p class="text-characteristic">Status</p>
+          <p class="text-characteristic">Staasdasdasdstus</p>
         </li>
         <li class="character-characteristics-item">
           <p class="title-characteristic">Location</p>
-          <p class="text-characteristic">Status</p>
+          <p class="text-characteristic">Staadasdasasdastus</p>
         </li>
         <li class="character-characteristics-item">
           <p class="title-characteristic">Type</p>
-          <p class="text-characteristic">Status</p>
+          <p class="text-characteristic">Stadasdadasdadastus</p>
         </li>
       </ul>
     </div>
     <div class="character-episodes-contsiner">
       <h2 class="character-episodes-title">Episodes</h2>
-      <ul class="character-episodes-list">
-        <li class="character-episodes-item">
-          <div class="character-episodes-item-wrap">
-            <h3 class="character-episodes-item-title">Pilotdfgdfgfdf</h3>
-            <ul class="character-episodes-item-characteristic-list">
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Season</p>
-                <p class="text-characteristic">1</p>
-              </li>
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Air date</p>
-                <p class="text-characteristic-air-date">May 2, 2013</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="character-episodes-item">
-          <div class="character-episodes-item-wrap">
-            <p class="character-episodes-item-title">Pilotasdasdasdasda</p>
-            <ul class="character-episodes-item-characteristic-list">
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Season</p>
-                <p class="text-characteristic">1</p>
-              </li>
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Air date</p>
-                <p class="text-characteristic-air-date">December 2, 2013</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="character-episodes-item">
-          <div class="character-episodes-item-wrap">
-            <h3 class="character-episodes-item-title">Pilot</h3>
-            <ul class="character-episodes-item-characteristic-list">
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Season</p>
-                <p class="text-characteristic">1</p>
-              </li>
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Air date</p>
-                <p class="text-characteristic-air-date">December 2, 2013</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="character-episodes-item">
-          <div class="character-episodes-item-wrap">
-            <h3 class="character-episodes-item-title">Pilot</h3>
-            <ul class="character-episodes-item-characteristic-list">
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Season</p>
-                <p class="text-characteristic">1</p>
-              </li>
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Air date</p>
-                <p class="text-characteristic-air-date">December 2, 2013</p>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="character-episodes-item">
-          <div class="character-episodes-item-wrap">
-            <h3 class="character-episodes-item-title">Pilot</h3>
-            <ul class="character-episodes-item-characteristic-list">
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Season</p>
-                <p class="text-characteristic">1</p>
-              </li>
-              <li class="character-episodes-item-characteristic-item">
-                <p class="title-characteristic">Air date</p>
-                <p class="text-characteristic-air-date">December 2, 2013</p>
-              </li>
-            </ul>
-          </div>
-        </li>
+      <ul data-simplebar class="character-episodes-list">
+        <div class="little-wrap">
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilotdfgdfgfdf</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">May 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <p class="character-episodes-item-title">Pilotasdasdasdasda</p>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">
+                    December 2asdasda, 2013
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="character-episodes-item">
+            <div class="character-episodes-item-wrap">
+              <h3 class="character-episodes-item-title">Pilot</h3>
+              <ul class="character-episodes-item-characteristic-list">
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Season</p>
+                  <p class="text-characteristic">1</p>
+                </li>
+                <li class="character-episodes-item-characteristic-item">
+                  <p class="title-characteristic">Air date</p>
+                  <p class="text-characteristic-air-date">December 2, 2013</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </div>
       </ul>
     </div>
   </div>
