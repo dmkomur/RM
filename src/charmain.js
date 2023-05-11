@@ -71,7 +71,7 @@ async function onLoadBtnClick(event) {
 
 
 async function onSmallEpiCardClick(event) {
- 
+    if (event.currentTarget === event.target) return
     const currentId = event.target.closest('.character-episodes-item').dataset.id;  
     await onEpiCardClick(currentId);
     const modalBtnCloseRef = document.querySelector('.episodes-popup-btn-close');
@@ -86,19 +86,20 @@ async function onEpiCardClick(currentId) {
     modalBackdropCharRef.innerHTML = markupToPaste;
        }
 async function onBigCharCardClick(event) {    
+        if (event.currentTarget === event.target) return
     const currentId = event.target.closest('.character-card').dataset.id;  
     await onCharCardClick(currentId);
     modalBackdropCharRef.classList.remove('is-hidden');
-    const bre = document.querySelector('.character-episodes-list');
-    new SimpleBar(bre);
     const modalBtnCloseRef = document.querySelector('.modal-button')
     const modalCharListRef = document.querySelector('.little-wrap')
     // charactersList.removeEventListener('click', onCharCardClick);
+
     modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
     modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
+    document.body.style.overflow = 'hidden';
 }
 async function onSmallCharCardClick(event) {
- 
+     if (event.currentTarget === event.target) return
     const currentId = event.target.closest('.episodes-popup-charlist-item').dataset.id;  
     await onCharCardClick(currentId);
     const modalBtnCloseRef = document.querySelector('.modal-button');
@@ -122,5 +123,6 @@ function onLoadBtn () {
 }
 
 function onModalBtnCloseClick(event) {
-    modalBackdropCharRef.classList.add('is-hidden')
+    modalBackdropCharRef.classList.add('is-hidden');
+    document.body.style.overflow = 'auto';
 }

@@ -138,13 +138,43 @@
   color: #a1d737;
 }
 
-.episodes-filter-info-realepisode {
+.episodes-filter-info-serias {
   position: absolute;
-
   left: 20px;
-  bottom: 42px;
+  bottom: 20px;
+  display: flex;
+  column-gap: 17px;
 }
 
+.episodes-filter-info-realepisode {
+width: 44px;
+height: 36px;
+display: flex;
+flex-wrap: wrap;
+row-gap: 4px;
+}
+
+.episodes-filter-info-airdate {
+  width: 100%;
+  height: 36px;
+}
+.episodes-filter-info-airdate > .episodes-filter-info-title {
+  padding-bottom: 4px;
+}
+
+.episodes-filter-info-title {
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+color: rgba(250, 250, 250, 0.5);
+}
+
+.episodes-filter-info-pretitle {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+color: #FAFAFA;
+}
 /* .episodes-filter-btn {
 padding-bottom: 90px;
 } */
