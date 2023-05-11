@@ -1,8 +1,8 @@
-<header class="header-main-page">
+<header class="header-main-page" id="header-main-page">
   <div class="container flex-header">
     <div class="container-header-block">
       <ul class="header-list-nav">
-        <li class=" nav-characters-item">
+        <li class="nav-characters-item">
           <a class="header-nav-characters link" href="./characters.html"
             >Characters</a
           >
@@ -22,7 +22,7 @@
           type="search-name"
           placeholder="Search"
         />
-        <button type="submit" class="search-btn-icon dis-none">
+        <button  type="submit" class="search-btn-icon dis-none">
           <svg class="svg-img-btn-head" width="16" height="16">
             <use xlink:href="../img/symbol.svg#icon-search"></use>
           </svg>
@@ -37,46 +37,58 @@
   </div>
 </header>
 
-
-  <section class=" bg-hero-color">
-    <div class="container-hero-block display">
-      <p class="text-hero-block dis-text">
-        If you're a fan of Rick and Morty, you don't want to miss out on our
-        app! Start exploring the endless possibilities of Rick and Morty!
-      </p>
-      <div class="bg-color-hero">
-        <img
-          class="nlo-mobile"
-          src="../img/hero-header-img/nlo-mob.webp"
-          alt="nlo-rick-morty"
-        />
-        <img
-          class="big-logo-mobile"
-          src="../img/hero-header-img/big-logo-mob.webp"
-          alt="nlo-rick-morty"
-        />
-        <img
-          class="nlo-tablet"
-          src="../img/hero-header-img/RM-nlo-tablet.webp"
-          alt="nlo-rick-morty"
-        />
-        <img
-          class="big-logo-tablet"
-          src="../img/hero-header-img/logo-tablet.webp"
-          alt="nlo-rick-morty"
-        />
-      </div>
-      <p class="text-hero-block disno-text">
-        If you're a fan of Rick and Morty, you don't want to miss out on our
-        app! Start exploring the endless possibilities of Rick and Morty!
-      </p>
-      <button class="scroll-btn-dunno" type="button">
-        <svg class="scroll" width="20px" height="20px">
-          <use href="../img/symbol.svg#icon-arrow"></use>
-        </svg>
-      </button>
+<section class="bg-hero-color">
+  <div class="container-hero-block display">
+    <p class="text-hero-block dis-text">
+      If you're a fan of Rick and Morty, you don't want to miss out on our app!
+      Start exploring the endless possibilities of Rick and Morty!
+    </p>
+    <div class="bg-color-hero">
+      <img
+        class="nlo-mobile"
+        src="../img/hero-header-img/nlo-mob.webp"
+        alt="nlo-rick-morty"
+      />
+      <img
+        class="big-logo-mobile"
+        src="../img/hero-header-img/big-logo-mob.webp"
+        alt="nlo-rick-morty"
+      />
+      <img
+        class="nlo-tablet"
+        src="../img/hero-header-img/RM-nlo-tablet.webp"
+        alt="nlo-rick-morty"
+      />
+      <img
+        class="big-logo-tablet"
+        src="../img/hero-header-img/logo-tablet.webp"
+        alt="nlo-rick-morty"
+      />
     </div>
-    
-  </section>
+    <p class="text-hero-block disno-text">
+      If you're a fan of Rick and Morty, you don't want to miss out on our app!
+      Start exploring the endless possibilities of Rick and Morty!
+    </p>
+    <button
+      class="scroll-btn-dunno up-down-btn"
+      type="button"
+      id="myBtn"
+      onClick="document.getElementById('divider').scrollIntoView(); "
+    >
+      <svg class="scroll-mobile" width="20px" height="20px">
+        <use href="../img/symbol.svg#icon-arrow"></use>
+      </svg>
+      <svg class="scroll-tablet" width="32px" height="32px">
+        <use href="../img/symbol.svg#icon-arrow"></use>
+      </svg>
+      <svg class="scroll-desktop" width="40px" height="40px">
+        <use href="../img/symbol.svg#icon-arrow"></use>
+      </svg>
+    </button>
+  </div>
+</section>
 
-  
+
+<script src="../header-hero.js"></script>
+
+
