@@ -83,7 +83,13 @@ const loadBtnCharRef = document.querySelector('.load-more-btn');
 const query = new QueryRick();
 
 episodeFormRef.addEventListener('input', debounce(onFormInput, 350))
-
+onload();
+async function onload() {
+    const response = await query.getEpisodes();
+    galleryList.addEventListener('click', onBigEpiCardClick);
+    const data = response.results;
+    galleryList.innerHTML = marckupEpisodes(data);
+}
 async function onFormInput (e) {
     query[e.target.name] = e.target.value;
     const response = await query.getEpisodes();
@@ -98,21 +104,22 @@ async function onFormInput (e) {
     charactersErrorRef.classList.add('hidden');
     query.totalPages = response.info.pages;
     query.nextPage = response.info.next;
-    console.log(query.nextPage);
     const data = response.results;
     galleryList.innerHTML = marckupEpisodes(data);
     if (query.page < query.totalPages) {onLoadBtn()}
 }
-async function onBigEpiCardClick (e) {
+async function onBigEpiCardClick(e) {
+        if (e.currentTarget === e.target) return
+
     const currentId = e.target.closest('.episodes-filter-card-list').dataset.id;  
     await onEpiCardClick(currentId);
     modalBackdropCharRef.classList.remove('is-hidden');
-    // const bre = document.querySelector('.character-episodes-list');
-    // new SimpleBar(bre);
-    const modalBtnCloseRef = document.querySelector('.episodes-popup-btn-close')
+     const modalBtnCloseRef = document.querySelector('.episodes-popup-btn-close')
     const modalCharListRef = document.querySelector('.episodes-popup-charlist')
     modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
     modalCharListRef.addEventListener('click', onSmallCharCardClick);  
+        document.body.style.overflow = 'hidden';
+
 }
 
 async function onEpiCardClick(currentId) {
@@ -156,7 +163,9 @@ function onLoadBtn () {
 }
 
 function onModalBtnCloseClick(event) {
-    modalBackdropCharRef.classList.add('is-hidden')
+    modalBackdropCharRef.classList.add('is-hidden');
+        document.body.style.overflow = 'auto';
+
 }
 
 async function onLoadBtnClick(event) {
