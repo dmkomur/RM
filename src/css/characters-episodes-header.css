@@ -1,9 +1,6 @@
 :root {
   --border-color: #fafafa4d;
 }
-html { 
-  scroll-behavior: smooth;
-}
 
 @media screen and (min-width: 320px) {
   .container {
@@ -24,7 +21,6 @@ html {
     right: 0;
     z-index: 1050;
   }
-  
 
   .header-list-nav {
     display: flex;
@@ -64,6 +60,14 @@ html {
     background: var(--color-gree);
     padding: 10px 20px;
     border-radius: 1000px;
+
+    transition-property: background-color, color, border;
+    transition: 250ms var(--animation-style);
+  }
+  .header-nav-characters:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: 1px solid var(--border-color);
   }
 
   .nav-episodes-item {
@@ -79,6 +83,14 @@ html {
     padding: 10px 20px;
     border-radius: 1000px;
     border: 1px solid var(--border-color);
+
+    transition-property: background-color, color, border;
+    transition: 250ms var(--animation-style);
+  }
+  .header-nav-episodes:hover {
+    background-color: var(--color-gree);
+    color: var(--color-black);
+    border: 1px solid var(--color-black);
   }
 
   .container-header-block {
@@ -133,8 +145,15 @@ html {
     background: transparent;
     outline: none;
     padding-left: 40px;
+
+    transition-property: background-color, color, border;
+    transition: 250ms var(--animation-style);
+  }
+  .search-form-header:hover {
+    border: 1px solid var(--color-gree);
   }
 
+  
   .header-svg {
     display: flex;
     align-items: center;
@@ -195,6 +214,13 @@ html {
     padding: 10px 20px;
     border-radius: 1000px;
     border: 1px solid var(--border-color);
+
+    transition-property: background-color, color, border;
+    transition: 250ms var(--animation-style);
+  }
+  .go-back-home:hover{
+    background-color: var(--color-gree);
+    color: var(--color-black);
   }
 
   .loop-box {
@@ -233,6 +259,9 @@ html {
   .svg-img-btn-head {
     fill: transparent;
     stroke: var(--color-white);
+
+    transition-property: background-color, color, border;
+    transition: 250ms var(--animation-style);
   }
 
   .block-search {
@@ -257,6 +286,12 @@ html {
   .scroll-mobile {
     background: transparent;
     stroke: var(--color-white);
+
+    transition-property: stroke;
+    transition: 250ms var(--animation-style);
+  }
+  .scroll-mobile:hover {
+    stroke: var(--color-gree);
   }
 
   .scroll-tablet {
@@ -281,8 +316,12 @@ html {
     bottom: 40px;
     position: fixed;
     z-index: 1050;
-    transition: all .2s ease-in;
-    scroll-behavior: smooth;
+
+    transition-property: background-color, color, border;
+    transition: 250ms var(--animation-style);
+  }
+  .font-size-page{
+    font-size: 12px;
   }
 
   .nlo-tablet {
@@ -680,5 +719,11 @@ html {
     padding-top: 54px;
     padding-bottom: 87px;
   }
-
+  .text-hero-block{
+    text-align: left;
+    padding-left: 8px;
+  }
+  .scroll-desktop:hover{
+    stroke: var(--color-gree);
+  }
 }

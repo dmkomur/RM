@@ -1,3 +1,4 @@
+
 const goToButton = document.querySelector('.up-down-btn');
 
 const bottomCoordinates = document.documentElement.scrollHeight;
@@ -19,7 +20,7 @@ window.addEventListener('scroll', () => {
 
 goToButton.addEventListener('click', () => {
   if (destination === "bot") {
-    window.scrollTo('div.divider');
+    window.scrollByPages(0.9);
     
 
   } else if (destination === "top") {
@@ -28,3 +29,5 @@ goToButton.addEventListener('click', () => {
   }
   
 });
+
+
