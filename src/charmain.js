@@ -93,7 +93,7 @@ async function onBigCharCardClick(event) {
     new SimpleBar(bre);
     const modalBtnCloseRef = document.querySelector('.modal-button')
     const modalCharListRef = document.querySelector('.little-wrap')
-    charactersList.removeEventListener('click', onCharCardClick);
+    // charactersList.removeEventListener('click', onCharCardClick);
     modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
     modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
 }

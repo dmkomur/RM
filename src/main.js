@@ -8,6 +8,8 @@ import 'simplebar/dist/simplebar.css';
 const indexSearchFormRef = document.querySelector('.search-block-header')
 const indexSearchRef = document.querySelector('[data-index-search]')
 const query = new QueryRick();
+const modalBackdropCharRef = document.querySelector('.backdrop')
+const indexSearchSectionRef = document.querySelector('#index-search')
 
 
 indexSearchFormRef.addEventListener('submit', onIndexSearchSubmit);
@@ -19,14 +21,16 @@ async function onIndexSearchSubmit(event) {
     const response = await query.getCharacters();
     if (!response) {
         indexSearchRef.innerHTML = '';
+        indexSearchSectionRef.classList.add('visually-hidden')
         return
     }
-    indexSearchRef.addEventListener('click', onBigCharCardClick);
     query.totalPages = response.info.pages;
     query.nextPage = response.info.next;
     const data = response.results;
     indexSearchRef.innerHTML = markupCharacters(data);
-    formCharRef[0].value = query.name;
+    indexSearchRef.addEventListener('click', onBigCharCardClick);
+    // formCharRef[0].value = query.name;
+    indexSearchSectionRef.classList.remove('visually-hidden')
      }
       
 async function onBigCharCardClick(event) {    
@@ -37,7 +41,9 @@ async function onBigCharCardClick(event) {
     new SimpleBar(bre);
     const modalBtnCloseRef = document.querySelector('.modal-button')
     const modalCharListRef = document.querySelector('.little-wrap')
-    indexSearchRef.removeEventListener('click', onCharCardClick);
+        modalBackdropCharRef.classList.remove('is-hidden');
+
+    // indexSearchRef.removeEventListener('click', onBigCharCardClick);
     modalBtnCloseRef.addEventListener('click', onModalBtnCloseClick);
     modalCharListRef.addEventListener('click', onSmallEpiCardClick);  
 }
