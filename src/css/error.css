@@ -1,6 +1,13 @@
-/* .test {
-  text-emphasis: none;
-} */
+.page404-back-home-btn:hover {
+  /* Стили для эффекта hover */
+  background-color: var(--color-gree);
+  color: var(--color-other-black);
+}
+
+.page404-logo:hover {
+  transform: scale(1.05);
+ 
+}
 
 .color-404 {
   background-color: var(--color-black);
@@ -13,6 +20,8 @@
 }
 .page404-logo {
   display: inline-block;
+  transition-property: scale; 
+  transition: 100ms var(--animation-style);
 }
 
 .page404-rick-img {
@@ -84,6 +93,9 @@
   margin-top: 20px;
   border: 1px solid rgba(250, 250, 250, 0.3);
   border-radius: 1000px;
+
+  transition-property: background-color, color;
+  transition: 250ms var(--animation-style);
 }
 
 @media screen and (min-width: 768px) {
