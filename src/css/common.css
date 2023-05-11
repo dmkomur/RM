@@ -75,3 +75,7 @@ body {
   pointer-events: none;
   visibility: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}

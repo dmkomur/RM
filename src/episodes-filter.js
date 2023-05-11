@@ -72,4 +72,3 @@ function createGalleryMarkup(data) {
 // }
 // selectList.addEventListener('click', createDropdownEl);
  
-
