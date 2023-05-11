@@ -155,13 +155,16 @@ export function marckupEpisodes (data) {
         <p class="episodes-filter-info-name">
           <span>${name}</span>
         </p>
-        <p class="episodes-filter-info-realepisode">Season
-          <span>${realEpisode}</span></p>
-        
-        <p class="episodes-filter-info-airdate">
-          <b>Air date</b>
-          <span>${air_date}</span>
-        </p>
+        <div class="episodes-filter-info-serias">
+          <div class="episodes-filter-info-realepisode">
+        <p class=" episodes-filter-info-title">Season</p>
+        <span class=" episodes-filter-info-pretitle">${realEpisode}</span>
+      </div>
+      <div class="episodes-filter-info-airdate">
+        <p class=" episodes-filter-info-title">Air date</p>
+        <span class=" episodes-filter-info-pretitle">${air_date}</span>
+      </div>
+        </div>
       </div>
       </div>
         `)
