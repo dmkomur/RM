@@ -149,27 +149,6 @@
 padding-bottom: 90px;
 } */
 
-/* .episodes-filter-selectwithlabel {
-    --fsb-border: 1.5px solid var(--color-other-black);
-    --fsb-radius: 100px;
-    --fsb-color: var(--color-other-black);
-    --fsb-background: var(--color-white);
-    --fsb-font-size: 14px;
-    --fsb-shadow: 0;
-    --fsb-padding: 14px 24px;
-    --fsb-arrow-padding: 24px;
-    --fsb-arrow-size: 7px;
-    --fsb-arrow-color: var(--color-other-black);
-    --fsb-icon-color: currentColor;
-    --fsb-list-height: 150px;
-    --fsb-list-border: 1px solid var(--color-other-black);
-    --fsb-list-radius: 16px;
-    --fsb-list-color: rgba(17, 17, 17, 0.3);
-    --fsb-list-background: var(--color-white);
-    --fsb-hover-color: var(--color-other-black);
-    --fsb-hover-background: var(--color-white);
-} */
-
 .dropdown-item.fsb-option {
   padding-left: 20px;
 }
