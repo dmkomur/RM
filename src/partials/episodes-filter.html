@@ -16,7 +16,7 @@
             class="episodes-filter-input"
             id="episodes-filter-user-name"
             type="text"
-            name="episodes-filter-user-name"
+            name="episodeName"
             placeholder="Enter name"
           />
           <svg class="episodes-filter-input-icon" width="12px" height="12px">
@@ -27,7 +27,7 @@
       <div class="episodes-filter-selectwithlabel">
         <label for="episode" class="episodes-filter-text"> Episode code </label>
         <div class="episodes-filter-select-field">
-          <select>
+          <select name="episode">
             <option value="">All Season</option>
             <option value="s01">1 Season</option>
             <option value="s01e01">ㅤ1 series</option>
@@ -89,35 +89,25 @@
         </div>
       </div>
     </form>
-    <div class="gallery">
-        <!-- <div class="episodes-filter-card-list list">
-            <img
-              class="episodes-filter-photo-card"
-              src="${img}" 
-              alt="" 
-              width="335px"
-              height="250px"
-            />
-          <div class="episodes-filter-info">
-            <p class="episodes-filter-info-name">
-              <span>${name}</span>
-            </p>
-            <div class="episodes-filter-info-serias">
-              <div class="episodes-filter-info-realepisode">
-            <p class=" episodes-filter-info-title">Season</p>
-            <span class=" episodes-filter-info-pretitle">${realEpisode}</span>
-          </div>
-          <div class="episodes-filter-info-airdate">
-            <p class=" episodes-filter-info-title">Air date</p>
-            <span class=" episodes-filter-info-pretitle">${air_date}</span>
-          </div>
-            </div>
-          </div>
-          </div> -->
-    </div>
-    <button type="button" class="load-more-btn episodes-filter-btn">
-      Load more
-    </button>
+    <div class="gallery"></div>
+
+    <button type="button" class="load-more-btn visually-hidden">Load more</button>
+</div>
+</section>
+
+<!-- Error -->
+<div class="characters-filter-error hidden">
+<img
+  src="../img/character-filter/error-filter-mobile-1x.png"
+  alt="Error. You need to change your search terms"
+  srcset="
+    ../img/character-filter/error-filter-mobile-1x.png 1x,
+    ../img/character-filter/error-filter-mobile-2x.png 2x
+  "
+/>
+<p>Oops! Try looking for something else...</p>
+</div>
+
   </div>
 </section>
 <script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>

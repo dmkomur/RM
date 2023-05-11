@@ -1,4 +1,6 @@
 import { QueryRick } from "./fetcher"
+import 'simplebar';
+import 'simplebar/dist/simplebar.css';
 const query = new QueryRick;
 
 export function markupCharacters(data) {
@@ -124,10 +126,46 @@ export async function marckupEpi(data) {
         </div>
       </div>
       <h3 class="episode-popup-header">Characters</h3>
-      <ul class="episodes-popup-charlist">
-       ${stringOfCharacters}
+      <ul class="episodes-popup-charlist" data-simplebar >
+       <div class="wrap-for-charlist">
+           ${stringOfCharacters}
+        </div>
       </ul>
     </div>
   </div>`
 }
-
+ 
+export function marckupEpisodes (data) {
+      const markup = data
+      .map(({url, name, episode, air_date, id}) => {
+          const realEpisode = episode.slice(2,3);
+          const realImg = {1:'./img/episodes-filter/season-1.png', 2:'./img/episodes-filter/season-2.png', 3:'./img/episodes-filter/season-3.png', 4:'./img/episodes-filter/season-4.png', 5:'./img/episodes-filter/season-5.png', 6:'./img/episodes-filter/season-6.png'};
+          const img = realImg[realEpisode];
+          const episodeId = id;
+        return (`
+        <div class="episodes-filter-card-list list" data-id="${episodeId}">
+        <img
+          class="episodes-filter-photo-card"
+          src="${img}" 
+          alt="" 
+          width="335px"
+          height="250px"
+        />
+      <div class="episodes-filter-info">
+        <p class="episodes-filter-info-name">
+          <span>${name}</span>
+        </p>
+        <p class="episodes-filter-info-realepisode">Season
+          <span>${realEpisode}</span></p>
+        
+        <p class="episodes-filter-info-airdate">
+          <b>Air date</b>
+          <span>${air_date}</span>
+        </p>
+      </div>
+      </div>
+        `)
+    })
+    .join(''); 
+    return markup;
+  }
