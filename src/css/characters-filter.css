@@ -31,6 +31,13 @@
     --fsb-border: 1.5px solid var(--color-light-green);
   }
 
+  .fsb-list {
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: #111111;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  }
+
   .fsb-list > .fsb-option {
     width: 132px;
   }
@@ -245,6 +252,10 @@
     width: 160px;
   }
 
+  .fsb-list > .fsb-option {
+    width: 160px;
+  }
+
   /* Main styles */
   .characters-filter {
     padding-top: 40px;
@@ -283,6 +294,10 @@
     line-height: 1.12;
   }
 
+  .select-container-status > .fsb-option {
+    width: 202px;
+  }
+
   .select-container-species > .fsb-select {
     width: 192px;
     height: 50px;
@@ -291,7 +306,15 @@
     line-height: 1.12;
   }
 
+  .select-container-species > .fsb-option {
+    width: 192px;
+  }
+
   .select-container-type > .fsb-select {
+    width: 175px;
+  }
+
+  .select-container-species > .fsb-option {
     width: 175px;
   }
 
@@ -301,6 +324,10 @@
 
     font-size: 16px;
     line-height: 1.12;
+  }
+
+  .select-container-gender > .fsb-option {
+    width: 167px;
   }
 
   .select-with-label-container {
@@ -393,9 +420,17 @@
     width: 165px;
   }
 
+  .select-container-status > .fsb-option {
+    width: 165px;
+  }
+
   .select-container-species > .fsb-select {
     width: 204px;
     margin-right: 16px;
+  }
+
+  .select-container-status > .fsb-option {
+    width: 204px;
   }
 
   label[for='type'],
