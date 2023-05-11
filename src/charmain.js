@@ -17,29 +17,6 @@ const charactersSearchRef = document.querySelector('.search-block-header')
 
 
 formCharRef.addEventListener('input', debounce(onFormCharSubbit, 350));
-// charactersSearchRef.addEventListener('submit', onCharSearchSubmit);
-
-// async function onCharSearchSubmit(event) {
-//     event.preventDefault();
-//     query.name = event.target[0].value;
-//     const response = await query.getCharacters();
-//     if (!response) {
-//         charactersList.innerHTML = '';
-//         charactersErrorRef.classList.remove('hidden');
-//         offLoadBtn();
-//         return
-//     }
-//     charactersList.addEventListener('click', onBigCharCardClick);
-//     charactersErrorRef.classList.add('hidden');
-//     query.totalPages = response.info.pages;
-//     query.nextPage = response.info.next;
-//     const data = response.results;
-//     charactersList.innerHTML = markupCharacters(data);
-//     charactersErrorRef.classList.add('hidden');
-//       charactersSearchRef.reset();
-//     formCharRef[0].value = query.name;
-//       if (query.page < query.totalPages) {onLoadBtn()}
-//       }
 
 async function onFormCharSubbit(event) { 
     offLoadBtn();
