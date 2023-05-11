@@ -24,9 +24,9 @@
 
 .episodes-filter-input-icon {
   position: absolute;
-  right: 14px;
+  right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-25%);
   fill: transparent;
   stroke: rgba(17, 17, 17, 1);
 }
@@ -88,26 +88,15 @@
   padding-top: 12px;
   padding-bottom: 12px;
 }
-/* .pisodes-filter-select-wrap {
-    position: absolute; 
-} */
 
 .episodes-filter-select-field {
   position: relative;
   padding-top: 8px;
 }
 
-.episodes-filter-select-field select {
-  /* display: none; */
-}
-
 .select-selected {
   background-color: #ffffff;
 }
-
-/* .episodes-filter-select:focus {
-    background-color: #DAF836;
-} */
 
 .gallery {
   display: flex;
