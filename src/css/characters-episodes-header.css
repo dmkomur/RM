@@ -369,6 +369,9 @@
     max-width: 375px;
     padding: 0 20px;
   }
+  .header-list-nav{
+    gap: 2px;
+  }
 
   .flex-header {
     background-color: var(--color-black);
