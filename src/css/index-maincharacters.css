@@ -117,7 +117,12 @@
 .swiper-slide .main-char__section__img {
     border: none;
     display: block;
-    
+    border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+    .swiper-slide .main-char__section__img{
+    border-radius: 100px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .swiper-slide .main-char__section__img{
@@ -129,18 +134,17 @@
 
 .main-char__section__char-image-box {
     margin-bottom: 32px;
-    border-radius: 25px;
 }
 @media screen and (min-width: 1200px) {
     .main-char__section__char-image-box {
     margin-bottom: 0;
     height: 544px;
+    
     }
 }
 @media screen and (min-width: 768px) {
     .main-char__section__char-image-box {
     margin-bottom: 32px;
-    border-radius: 100px;
     }
 }
 
