@@ -27,7 +27,7 @@ function print() { __p += __j.call(arguments, '') }
     </li>`).join("")}async function Ov(d){const a=d.episode.map(_=>Uo.getNextPage(_)),s=await Promise.all(a),f=yv(s);return`<div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href="../img/symbol.svg#icon-close"></use>
+        <use href="./img/symbol.svg#icon-close"></use>
       </svg>
     </button>
     <div>
@@ -93,7 +93,7 @@ function print() { __p += __j.call(arguments, '') }
     `).join("")}async function Cv(d){const a=d.characters.map(_=>Uo.getNextPage(_)),s=await Promise.all(a),f=Ev(s);return`<div class="episode-popup">
     <button class="episodes-popup-btn-close" type="button">
       <svg class="episodes-popup-btn-close-icon" width="20" height="20">
-        <use href="../img/symbol.svg#icon-close"></use>
+        <use href="./img/symbol.svg#icon-close"></use>
       </svg>
     </button>
     <div class="episode-popup-card">
