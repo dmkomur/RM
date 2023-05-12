@@ -6,6 +6,7 @@ import 'swiper/css/effect-fade';
 
 const swiper = new Swiper('.main-char__section__char--images-and-info', {
   effect: 'fade',
+  allowTouchMove: false,
   fadeEffect: {
     crossFade: true
   },
