@@ -40,6 +40,8 @@
   padding: 20px;
 }
 
+
+
 .episode-popup-header {
   color: var(--color-white);
   font-size: 18px;
@@ -66,20 +68,34 @@
   line-height: 1.29;
   color: rgb(250, 250, 250);
 }
+
 .episodes-popup-charlist {
   height: 114px;
 }
+
 .episodes-popup-charlist-item {
   display: flex;
   gap: 8px;
   align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0 0px 0px rgba(0, 0, 0, .5);
+  transition: box-shadow 250ms var(--animation-style);
 }
+
+.episodes-popup-charlist-item:hover,
+.episodes-popup-charlist-item:hover {
+  box-shadow: -5px 0 5px -5px rgba(161,
+      215,
+      55, .5);
+}
+
 .wrap-for-charlist {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 14px 24px;
 }
+
 .episodes-popup-image-thumb {
   width: 50px;
   height: 50px;
@@ -100,17 +116,20 @@
     text-overflow: ellipsis;
   }
 }
+
 @media screen and (min-width: 375px) {
   .episodes-popup-charlist-text {
     width: 51px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .episode-popup {
     max-width: 673px;
     width: 673px;
     padding: 32px;
   }
+
   .episodes-popup-charlist {
     height: 60px;
   }
@@ -133,17 +152,21 @@
     font-size: 16px;
     line-height: 1.13;
   }
+
   .episode-popup-info {
     gap: 32px;
     margin-bottom: 32px;
   }
+
   .episodes-popup-charlist-text {
     width: 53px;
   }
+
   .wrap-for-charlist {
     gap: 32px;
     flex-wrap: nowrap;
   }
+
   .episodes-popup-image-thumb {
     width: 60px;
     height: 60px;

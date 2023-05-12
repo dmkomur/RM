@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="../FancySelect-main/src/fancyselect.css" />
+<link rel="stylesheet" href="./FancySelect-main/src/fancyselect.css" />
 
 <section class="characters-filter">
   <div class="container">
@@ -19,7 +19,7 @@
             />
             <button type="submit" class="search-icon">
               <svg width="18" height="18">
-                <use href="../img/symbol.svg#icon-search"></use>
+                <use href="./img/symbol.svg#icon-search"></use>
               </svg>
             </button>
           </span>
@@ -88,23 +88,26 @@
     <ul class="characters-gallery"></ul>
 
     <!-- Load more -->
-    <button type="button" class="load-more-btn">Load more</button>
+    <button type="button " class="load-more-btn visually-hidden">
+      Load more
+    </button>
   </div>
 </section>
 
 <!-- Error -->
 <div class="characters-filter-error hidden">
   <img
-    src="../img/character-filter/error-filter-mobile-1x.png"
+    src="./img/character-filter/error-filter-mobile-1x.png"
     alt="Error. You need to change your search terms"
     srcset="
-      ../img/character-filter/error-filter-mobile-1x.png 1x,
-      ../img/character-filter/error-filter-mobile-2x.png 2x
+      ./img/character-filter/error-filter-mobile-1x.png 1x,
+      ./img/character-filter/error-filter-mobile-2x.png 2x
     "
   />
   <p>Oops! Try looking for something else...</p>
 </div>
 
-<script src="..//FancySelect-main/src/fancyselect.js"></script>
+<!-- <script src="./FancySelect-main/src/fancyselect.js"></script> -->
+<script src="https://cdn.jsdelivr.net/gh/mdbassit/FancySelect@latest/dist/fancyselect.min.js"></script>
 
-<script src="../characters-filter.js" type="module"></script>
+<script src="./characters-filter.js" type="module"></script>

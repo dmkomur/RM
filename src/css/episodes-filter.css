@@ -24,9 +24,9 @@
 
 .episodes-filter-input-icon {
   position: absolute;
-  right: 14px;
+  right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-25%);
   fill: transparent;
   stroke: rgba(17, 17, 17, 1);
 }
@@ -38,6 +38,7 @@
   line-height: 1.29;
   color: #111111;
 }
+
 /* 
 .episodes-filter-select {
     width: 335px;
@@ -75,6 +76,7 @@
   --fsb-hover-color: var(--color-other-black);
   --fsb-hover-background: var(--color-white);
 }
+
 .episodes-filter-select-icon {
   position: absolute;
   right: 14px;
@@ -84,30 +86,20 @@
   stroke: rgba(17, 17, 17, 1);
   z-index: 20;
 }
+
 .fsb-select .fsb-list {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-/* .pisodes-filter-select-wrap {
-    position: absolute; 
-} */
 
 .episodes-filter-select-field {
   position: relative;
   padding-top: 8px;
 }
 
-.episodes-filter-select-field select {
-  /* display: none; */
-}
-
 .select-selected {
   background-color: #ffffff;
 }
-
-/* .episodes-filter-select:focus {
-    background-color: #DAF836;
-} */
 
 .gallery {
   display: flex;
@@ -116,13 +108,22 @@
   padding-top: 40px;
   padding-bottom: 50px;
 }
+
 .episodes-filter-card-list {
   position: relative;
+  cursor: pointer;
+  scale: 1;
+  transition: scale 250ms var(--animation-style);
+}
+
+.episodes-filter-card-list:hover,
+.episodes-filter-card-list:focus {
+  scale: 1.04;
 }
 
 .episodes-filter-photo-card {
   background-color: rgba(13, 23, 29, 1);
-  border: 2px solid #a1d737;
+  border: 2px solid rgb(161, 215, 55);
   border-radius: 18px;
   width: 100%;
   height: 100%;
@@ -147,34 +148,36 @@
 }
 
 .episodes-filter-info-realepisode {
-width: 44px;
-height: 36px;
-display: flex;
-flex-wrap: wrap;
-row-gap: 4px;
+  width: 44px;
+  height: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4px;
 }
 
 .episodes-filter-info-airdate {
   width: 100%;
   height: 36px;
 }
-.episodes-filter-info-airdate > .episodes-filter-info-title {
+
+.episodes-filter-info-airdate>.episodes-filter-info-title {
   padding-bottom: 4px;
 }
 
 .episodes-filter-info-title {
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-color: rgba(250, 250, 250, 0.5);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(250, 250, 250, 0.5);
 }
 
 .episodes-filter-info-pretitle {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.29;
-color: #FAFAFA;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #FAFAFA;
 }
+
 /* .episodes-filter-btn {
 padding-bottom: 90px;
 } */
@@ -182,19 +185,24 @@ padding-bottom: 90px;
 .dropdown-item.fsb-option {
   padding-left: 20px;
 }
+
 .episodes-filter-select-field .fsb-select {
   width: 100%;
   height: 48px;
   border-radius: 100px;
   border: 1.5px solid #111111;
 }
+
 .fst-button {
   width: 100%;
 }
-.fsb-list > .fsb-option {
+
+.fsb-list>.fsb-option {
   width: 100%;
 }
-@media screen and (max-device-width: 320px), screen and (max-width: 374px) {
+
+@media screen and (max-device-width: 320px),
+screen and (max-width: 374px) {
   .episodes-filter-input {
     width: 100%;
     height: 50px;
@@ -204,23 +212,28 @@ padding-bottom: 90px;
     width: 100%;
     height: 50px;
   }
+
   .episodes-filter-selectwithlabel {
     width: 100%;
   }
+
   .episodes-filter-input-field {
     width: 100%;
   }
 }
+
 .form-filter {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
 }
+
 @media screen and (min-width: 375px) {
   .episodes-filter-photo-card {
     width: 335px;
     height: 250px;
   }
+
   .episodes-filter-select-field .fsb-select {
     width: 335px;
   }

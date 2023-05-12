@@ -90,7 +90,8 @@ async function onload() {
     const data = response.results;
     galleryList.innerHTML = marckupEpisodes(data);
 }
-async function onFormInput (e) {
+async function onFormInput(e) {
+    offLoadBtn();
     query[e.target.name] = e.target.value;
     const response = await query.getEpisodes();
     if (!response) {

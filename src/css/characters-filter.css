@@ -1,8 +1,8 @@
 @media screen and (min-width: 320px) {
   /* Select menu */
 
-  .select-container-status > .fsb-select,
-  .select-container-type > .fsb-select {
+  .select-container-status>.fsb-select,
+  .select-container-type>.fsb-select {
     width: 132px;
     height: 46px;
     margin-right: 10px;
@@ -11,12 +11,12 @@
     line-height: 1.29;
   }
 
-  .select-container-status > .fsb-select {
+  .select-container-status>.fsb-select {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .select-container-species > .fsb-select,
-  .select-container-gender > .fsb-select {
+  .select-container-species>.fsb-select,
+  .select-container-gender>.fsb-select {
     width: 132px;
     height: 46px;
 
@@ -24,10 +24,10 @@
     line-height: 1.29;
   }
 
-  .select-container-status > .fsb-select:is(:hover, :focus),
-  .select-container-species > .fsb-select:is(:hover, :focus),
-  .select-container-type > .fsb-select:is(:hover, :focus),
-  .select-container-gender > .fsb-select:is(:hover, :focus) {
+  .select-container-status>.fsb-select:is(:hover, :focus),
+  .select-container-species>.fsb-select:is(:hover, :focus),
+  .select-container-type>.fsb-select:is(:hover, :focus),
+  .select-container-gender>.fsb-select:is(:hover, :focus) {
     --fsb-border: 1.5px solid var(--color-light-green);
   }
 
@@ -38,11 +38,11 @@
     box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
   }
 
-  .fsb-list > .fsb-option {
+  .fsb-list>.fsb-option {
     width: 132px;
   }
 
-  .fsb-list > .fsb-option > span {
+  .fsb-list>.fsb-option>span {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -155,6 +155,13 @@
     margin-bottom: 40px;
 
     cursor: pointer;
+    scale: 1;
+    transition: scale 250ms var(--animation-style);
+  }
+
+  .character-card:hover,
+  .character-card:hover {
+    scale: 1.04;
   }
 
   .character-img-wrap {
@@ -248,15 +255,16 @@
 }
 
 @media screen and (min-width: 375px) {
+
   /* Select menu */
-  .select-container-status > .fsb-select,
-  .select-container-type > .fsb-select,
-  .select-container-species > .fsb-select,
-  .select-container-gender > .fsb-select {
+  .select-container-status>.fsb-select,
+  .select-container-type>.fsb-select,
+  .select-container-species>.fsb-select,
+  .select-container-gender>.fsb-select {
     width: 160px;
   }
 
-  .fsb-list > .fsb-option {
+  .fsb-list>.fsb-option {
     width: 160px;
   }
 
@@ -277,9 +285,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
   /* Select menu */
-  .select-container-status > .fsb-select,
-  .select-container-type > .fsb-select {
+  .select-container-status>.fsb-select,
+  .select-container-type>.fsb-select {
     height: 50px;
     margin-right: 16px;
 
@@ -287,18 +296,18 @@
     line-height: 1.12;
   }
 
-  .select-container-status > .fsb-select {
+  .select-container-status>.fsb-select {
     width: 202px;
 
     font-size: 16px;
     line-height: 1.12;
   }
 
-  .select-container-status > .fsb-option {
+  .select-container-status>.fsb-option {
     width: 202px;
   }
 
-  .select-container-species > .fsb-select {
+  .select-container-species>.fsb-select {
     width: 192px;
     height: 50px;
 
@@ -306,19 +315,19 @@
     line-height: 1.12;
   }
 
-  .select-container-species > .fsb-option {
+  .select-container-species>.fsb-option {
     width: 192px;
   }
 
-  .select-container-type > .fsb-select {
+  .select-container-type>.fsb-select {
     width: 175px;
   }
 
-  .select-container-type > .fsb-option {
+  .select-container-type>.fsb-option {
     width: 175px;
   }
 
-  .select-container-gender > .fsb-select {
+  .select-container-gender>.fsb-select {
     width: 167px;
     height: 50px;
 
@@ -326,7 +335,7 @@
     line-height: 1.12;
   }
 
-  .select-container-gender > .fsb-option {
+  .select-container-gender>.fsb-option {
     width: 167px;
   }
 
@@ -416,21 +425,22 @@
 }
 
 @media screen and (min-width: 1200px) {
+
   /* Select menu */
-  .select-container-status > .fsb-select {
+  .select-container-status>.fsb-select {
     width: 165px;
   }
 
-  .select-container-status > .fsb-option {
+  .select-container-status>.fsb-option {
     width: 165px;
   }
 
-  .select-container-species > .fsb-select {
+  .select-container-species>.fsb-select {
     width: 204px;
     margin-right: 16px;
   }
 
-  .select-container-status > .fsb-option {
+  .select-container-status>.fsb-option {
     width: 204px;
   }
 
