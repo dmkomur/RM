@@ -26,6 +26,11 @@
   background-color: transparent;
   border: none;
   padding: 0;
+  transition: transform 250ms linear;
+}
+.episodes-popup-btn-close:hover {
+  transform: scale(1.23);
+  transition: transform 250ms linear;
 }
 
 .episodes-popup-btn-close-icon {
@@ -39,8 +44,6 @@
   border-radius: 18px;
   padding: 20px;
 }
-
-
 
 .episode-popup-header {
   color: var(--color-white);
@@ -78,15 +81,13 @@
   gap: 8px;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0px 0 0px 0px rgba(0, 0, 0, .5);
+  box-shadow: 0px 0 0px 0px rgba(0, 0, 0, 0.5);
   transition: box-shadow 250ms var(--animation-style);
 }
 
 .episodes-popup-charlist-item:hover,
 .episodes-popup-charlist-item:hover {
-  box-shadow: -5px 0 5px -5px rgba(161,
-      215,
-      55, .5);
+  box-shadow: -5px 0 5px -5px rgba(161, 215, 55, 0.5);
 }
 
 .wrap-for-charlist {
