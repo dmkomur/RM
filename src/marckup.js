@@ -22,7 +22,7 @@ export async function marckupChar(data) {
     return  `<div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href="../img/symbol.svg#icon-close"></use>
+        <use href="./img/symbol.svg#icon-close"></use>
       </svg>
     </button>
     <div>
@@ -110,7 +110,7 @@ export async function marckupEpi(data) {
     return  `<div class="episode-popup">
     <button class="episodes-popup-btn-close" type="button">
       <svg class="episodes-popup-btn-close-icon" width="20" height="20">
-        <use href="../img/symbol.svg#icon-close"></use>
+        <use href="./img/symbol.svg#icon-close"></use>
       </svg>
     </button>
     <div class="episode-popup-card">
