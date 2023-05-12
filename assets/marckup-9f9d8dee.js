@@ -27,7 +27,7 @@ function print() { __p += __j.call(arguments, '') }
     </li>`).join("")}async function Ov(d){const a=d.episode.map(_=>Uo.getNextPage(_)),s=await Promise.all(a),f=yv(s);return`<div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href="./img/symbol.svg#icon-close"></use>
+        <use href="./assets/symbol-de6d0e72.svg#icon-close"></use>
       </svg>
     </button>
     <div>
