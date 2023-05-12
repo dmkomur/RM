@@ -22,7 +22,7 @@ export async function marckupChar(data) {
     return  `<div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href="./img/symbol.svg#icon-close"></use>
+        <use href="./assets/symbol-de6d0e72.svg#icon-close"></use>
       </svg>
     </button>
     <div>
