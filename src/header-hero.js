@@ -6,7 +6,7 @@ const bottomCoordinates = document.documentElement.scrollHeight;
 let destination = "bot";
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > bottomCoordinates / 4) {
+  if (window.scrollY > bottomCoordinates / 10) {
     goToButton.style.transform = "rotate(180deg)";
     destination = "top"
     
