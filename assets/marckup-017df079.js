@@ -115,7 +115,7 @@ function print() { __p += __j.call(arguments, '') }
         </div>
       </ul>
     </div>
-  </div>`}function Lv(d){return d.map(({url:s,name:f,episode:_,air_date:b,id:S})=>{const R=_.slice(2,3),q={1:"./img/episodes-filter/season-1.png",2:"./img/episodes-filter/season-2.png",3:"./img/episodes-filter/season-3.png",4:"./img/episodes-filter/season-4.png",5:"./img/episodes-filter/season-5.png",6:"./img/episodes-filter/season-6.png"}[R];return`
+  </div>`}function Lv(d){return d.map(({url:s,name:f,episode:_,air_date:b,id:S})=>{const R=_.slice(2,3),q={1:"./assets/season-1-3ab970ce.png",2:"./assets/season-2-18f0bb3e.png",3:"./assets/season-3-40badb8d.png",4:"./assets/season-4-d0061b4d.png",5:"./assets/season-5-21356cd7.png",6:"./assets/season-6-006f46a0.png"}[R];return`
         <div class="episodes-filter-card-list list" data-id="${S}">
         <img
           class="episodes-filter-photo-card"
