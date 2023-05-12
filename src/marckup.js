@@ -22,7 +22,7 @@ export async function marckupChar(data) {
     return  `<div class="modal">
     <button type="button" class="modal-button" data-character-modal-close>
       <svg class="modal-soc-icon" width="10px" height="10px">
-        <use href="../img/symbol.svg#icon-close"></use>
+        <use href="./assets/symbol-de6d0e72.svg#icon-close"></use>
       </svg>
     </button>
     <div>
@@ -110,7 +110,7 @@ export async function marckupEpi(data) {
     return  `<div class="episode-popup">
     <button class="episodes-popup-btn-close" type="button">
       <svg class="episodes-popup-btn-close-icon" width="20" height="20">
-        <use href="../img/symbol.svg#icon-close"></use>
+        <use href="./assets/symbol-de6d0e72.svg#icon-close"></use>
       </svg>
     </button>
     <div class="episode-popup-card">
@@ -139,7 +139,7 @@ export function marckupEpisodes (data) {
       const markup = data
       .map(({url, name, episode, air_date, id}) => {
           const realEpisode = episode.slice(2,3);
-          const realImg = {1:'./img/episodes-filter/season-1.png', 2:'./img/episodes-filter/season-2.png', 3:'./img/episodes-filter/season-3.png', 4:'./img/episodes-filter/season-4.png', 5:'./img/episodes-filter/season-5.png', 6:'./img/episodes-filter/season-6.png'};
+          const realImg = {1:'./assets/season-1-3ab970ce.png', 2:'./assets/season-2-18f0bb3e.png', 3:'./assets/season-3-40badb8d.png', 4:'./assets/season-4-d0061b4d.png', 5:'./assets/season-5-21356cd7.png', 6:'./assets/season-6-006f46a0.png'};
           const img = realImg[realEpisode];
           const episodeId = id;
         return (`

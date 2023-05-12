@@ -106,7 +106,6 @@
   gap: 20px;
   flex-wrap: wrap;
   padding-top: 40px;
-  padding-bottom: 50px;
 }
 
 .episodes-filter-card-list {
@@ -178,9 +177,11 @@
   color: #FAFAFA;
 }
 
-/* .episodes-filter-btn {
+.episodes-filter-btn {
+  padding-top: 40px;
+
 padding-bottom: 90px;
-} */
+}
 
 .dropdown-item.fsb-option {
   padding-left: 20px;
@@ -237,6 +238,7 @@ screen and (max-width: 374px) {
   .episodes-filter-select-field .fsb-select {
     width: 335px;
   }
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -267,13 +269,16 @@ screen and (max-width: 374px) {
 
   .gallery {
     gap: 32px;
-    padding-bottom: 76px;
   }
 
   .episodes-filter-photo-card {
     width: 336px;
     height: 250px;
   }
+  .episodes-filter-btn {
+    padding-top: 64px;
+    padding-bottom: 128px;
+    }
 
   /* .episodes-filter {
         padding-top: 76px;
@@ -290,7 +295,6 @@ screen and (max-width: 374px) {
 @media screen and (min-width: 1200px) {
   .gallery {
     column-gap: 16px;
-    padding-bottom: 64px;
   }
 
   .episodes-filter-photo-card {
