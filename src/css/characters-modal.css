@@ -22,8 +22,12 @@
   .modal-soc-icon {
     stroke: var(--color-gree);
     transform: scale(2.38);
+    transition: transform 250ms linear;
   }
-
+  .modal-soc-icon:hover {
+    transform: scale(3);
+    transition: transform 250ms linear;
+  }
   .modal-button {
     position: absolute;
     right: 14px;
@@ -128,7 +132,10 @@
     border: 2px solid var(--color-gree);
     border-radius: 18px;
     cursor: pointer;
-    transition: border 250ms var(--animation-style);
+    transition: background-color 250ms var(--animation-style);
+  }
+  .character-episodes-item:hover {
+    background-color: rgb(5, 104, 5);
   }
 
   .character-episodes-item:hover,
