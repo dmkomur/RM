@@ -17,7 +17,7 @@
   width: 119px;
   height: 32px;
 }
-.swiper-slide img {
+.section-gallery__list .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -27,7 +27,7 @@
   width: 200px;
   height: 220px;
 }
-.swiper-wrapper {
+.mySwiper .swiper-wrapper {
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -43,6 +43,7 @@
   border-radius: 1000px;
 
   background-color: var(--color-gree);
+  transition: background-color 250ms var(--animation-style);
   color: var(--color-black);
 }
 .link-gallary:hover {
@@ -84,7 +85,7 @@
     width: 189px;
     height: 56px;
   }
-  .swiper-slide img {
+  .section-gallery__list .swiper-slide img {
     width: 278px;
     height: 314px;
   }
@@ -95,7 +96,7 @@
     /* identical to box height, or 133% */
     padding: 12px 24px;
   }
-  .swiper-wrapper {
+  .mySwiper .swiper-wrapper {
     margin-top: 64px;
     margin-bottom: 32px;
   }
