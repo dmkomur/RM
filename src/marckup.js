@@ -110,7 +110,7 @@ export async function marckupEpi(data) {
     return  `<div class="episode-popup">
     <button class="episodes-popup-btn-close" type="button">
       <svg class="episodes-popup-btn-close-icon" width="20" height="20">
-        <use href="./img/symbol.svg#icon-close"></use>
+        <use href="./assets/symbol-de6d0e72.svg#icon-close"></use>
       </svg>
     </button>
     <div class="episode-popup-card">
